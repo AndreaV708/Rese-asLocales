@@ -1,37 +1,28 @@
-# 🌟 Reseñas de Locales Cercanos a la Universidad
+# 🏫 Proyecto de Reseñas de Locales Cercanos a la Universidad
 
-Este proyecto es una página web diseñada para mostrar reseñas de locales (cafeterías, restaurantes, papelerías, etc.) que se encuentran cerca de nuestra universidad. Incluye una interfaz amigable, filtros, blog de recomendaciones y formulario de contacto.
+Este proyecto consiste en una página web colaborativa donde se muestran reseñas de distintos locales cercanos a nuestra universidad (comida, copias, papelerías, etc.). El objetivo es ayudar a otros estudiantes a encontrar los mejores sitios recomendados por nuestra comunidad universitaria.
 
----
+## 🚀 Objetivos
 
-## 🎯 Objetivo
-
-Crear una página web estática y responsive que permita a los usuarios explorar, filtrar y leer reseñas de diferentes establecimientos.
-
----
-
-## 👥 Roles del Equipo y Tareas
-
-| Rol              | Tareas principales                                                                 |
-|------------------|-------------------------------------------------------------------------------------|
-| **Frontend Líder** | 1. Crear navbar y footer globales (`feature/navbar-footer`)  <br> 2. Hacer menú responsive para móviles (`feature/mobile-nav`) |
-| **UI Destinos**   | 1. Crear cards de destinos con imagen y descripción (`feature/destination-ui`) <br> 2. Agregar filtros por tipo de destino (`feature/filter-destinations`) |
-| **UI Blog**       | 1. Estructurar página del blog (`feature/blog-ui`) <br> 2. Crear plantilla para detalle del post (`feature/blog-post-detail`) |
-| **UI Contacto**   | 1. Crear formulario de contacto con HTML/CSS (`feature/contact-ui`) <br> 2. Validación de campos con JS (`feature/form-validation`) |
-| **Backend Dummy** | 1. Crear JSON con datos de destinos y blogs (`feature/mock-backend`) <br> 2. Conectar HTML con JSON usando JS (`feature/fetch-data`) |
-| **QA / Integrador** | 1. Revisar y aprobar Pull Requests (`chore/integration`) <br> 2. Navegar el sitio y detectar errores visibles (`test(ui-flow)`) |
+- Crear una plataforma simple y funcional para consultar y dejar reseñas de locales cercanos.
+- Desarrollar habilidades de trabajo en equipo usando GitHub, ramas, Issues, y Pull Requests.
+- Aplicar principios de diseño web responsivo, estructura de carpetas ordenada y validación de formularios.
 
 ---
 
-## 🔀 Flujo de Trabajo
+## 🧑‍💻 Asignación de Tareas por Integrante
 
-1. Cada integrante toma un **Issue** creado en GitHub.
-2. Crea una rama con el nombre del issue (por ejemplo: `feature/blog-ui`).
-3. Realiza su tarea y sube los cambios con commits claros.
-4. Abre un **Pull Request (PR)** hacia la rama `dev`.
-5. El equipo QA revisa y aprueba los cambios antes de hacer merge a `main`.
+| Rol / Integrante | Tarea 1 | Rama Sugerida | Tarea 2 | Rama Sugerida |
+|------------------|---------|----------------|----------|----------------|
+| **Frontend Líder** | Crear navbar y footer globales | `feature/navbar-footer` | Hacer menú responsive para móviles | `feature/mobile-nav` |
+| **UI Locales Recomendados** | Cambiar textos e imágenes del home para reflejar locales cercanos | `feature/home-update` | Crear sección “Locales Recomendados” con tarjetas | `feature/recommended-cards` |
+| **UI Formulario Reseñas** | Diseñar y codificar el formulario para agregar una reseña | `feature/review-form` | Validar datos del formulario (nombre del local, texto, rating) | `feature/form-validation` |
+| **UI Estructura & Filtros** | Implementar búsqueda/filtros por tipo de local (comida, copias, etc.) | `feature/local-filters` | Organizar archivos: index.html, css/, img/, js/ | `chore/file-structure` |
+| **UI About & Traducción** | Adaptar sección "About" con propósito y equipo | `feature/about-us` | Traducir sitio completo al español | `chore/translate-site` |
+| **UI Mapa & Contacto** | Implementar sección con Google Maps mostrando locales | `feature/map-section` | Crear página de “Contacto” con formulario y redes sociales | `feature/contact-page` |
+| **Backend & QA Líder** | Subir archivos al repositorio y agregar colaboradores | `chore/init-github` | Crear JSON de reseñas y conexión con HTML via JS (simulación backend) | `feature/fetch-reviews` |
 
 ---
 
-## 🛠️ Estructura del Proyecto
+## 🗂️ Estructura del Proyecto
 
