@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -232,69 +232,131 @@
                     <!-- Blog Detail End -->
     
                     <!-- Comment List Start -->
-                    <div class="bg-white" style="padding: 30px; margin-bottom: 30px;">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">3 Comments</h4>
-                        <div class="media mb-4">
-                            <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                            <div class="media-body">
-                                <h6><a href="">John Doe</a> <small><i>01 Jan 2045</i></small></h6>
-                                <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                    accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
-                                    Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
-                                    consetetur at sit.</p>
-                                <button class="btn btn-sm btn-outline-primary">Reply</button>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                            <div class="media-body">
-                                <h6><a href="">John Doe</a> <small><i>01 Jan 2045</i></small></h6>
-                                <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                    accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
-                                    Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
-                                    consetetur at sit.</p>
-                                <button class="btn btn-sm btn-outline-primary">Reply</button>
-                                <div class="media mt-4">
-                                    <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1"
-                                        style="width: 45px;">
-                                    <div class="media-body">
-                                        <h6><a href="">John Doe</a> <small><i>01 Jan 2045</i></small></h6>
-                                        <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor
-                                            labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed
-                                            eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet
-                                            ipsum diam tempor consetetur at sit.</p>
-                                        <button class="btn btn-sm btn-outline-primary">Reply</button>
-                                    </div>
+                    <div class="bg-white mb-5 p-4">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">User Reviews</h4>
+                        
+                        <!-- Review Item -->
+                        <div class="review-item mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
+                                <div class="ml-3">
+                                    <h6 class="mb-0">Emily O</h6>
+                                    <small class="text-muted">4 months ago</small>
                                 </div>
                             </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                </div>
+                                <small class="ml-2 text-muted">4.5/5</small>
+                            </div>
+                            <p>Great food. I had the cheese burger with added halloumi and chips, along with a mint lemonade. Service was quick and friendly!</p>
+                            <div class="d-flex">
+                                <img src="img/HamburguesaQuesp.png" alt="Review Image" class="img-fluid mr-2" style="width: 100px; height: 100px;">
+                                <img src="img/PapasFritas.png" alt="Review Image" class="img-fluid" style="width: 100px; height: 100px;">
+                            </div>
+                            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
+                        </div>
+                        
+                        <!-- Review Item -->
+                        <div class="review-item mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
+                                <div class="ml-3">
+                                    <h6 class="mb-0">Christopher R.</h6>
+                                    <small class="text-muted">Dec 21, 2021</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <small class="ml-2 text-muted">5/5</small>
+                            </div>
+                            <p>As always, Peter Luger’s does NOT disappoint. Our server was fantastic and made the experience memorable. Highly recommend!</p>
+                            <div class="d-flex">
+                                <img src="img/City.png" alt="Review Image" class="img-fluid mr-2" style="width: 100px; height: 100px;">
+                            </div>
+                            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
+                        </div>
+                        
+                        <!-- Review Item -->
+                        <div class="review-item mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
+                                <div class="ml-3">
+                                    <h6 class="mb-0">Katherine Larrequi</h6>
+                                    <small class="text-muted">1 month ago</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <small class="ml-2 text-muted">5/5</small>
+                            </div>
+                            <p>Food, service, and atmosphere were all of quality and elegance. Highly recommend Rocco Steakhouse for a special occasion!</p>
+
+                            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
                         </div>
                     </div>
                     <!-- Comment List End -->
     
                     <!-- Comment Form Start -->
                     <div class="bg-white mb-3" style="padding: 30px;">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a comment</h4>
-                        <form>
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a Review</h4>
+                        <form id="reviewForm">
                             <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" class="form-control" id="name">
+                                <label for="title">Review Title *</label>
+                                <input type="text" class="form-control" id="title" placeholder="Enter a title for your review">
+                                <small class="text-danger d-none" id="titleError">Title is required.</small>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" class="form-control" id="email">
+                                <label for="name">Name </label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                <small class="text-danger d-none" id="nameError">Name is required.</small>
                             </div>
                             <div class="form-group">
-                                <label for="website">Website</label>
-                                <input type="url" class="form-control" id="website">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                <small class="text-danger d-none" id="emailError">Valid email is required.</small>
                             </div>
-    
                             <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                <label for="rating">Rating *</label>
+                                <div id="starRating" class="d-flex align-items-center">
+                                    <i class="fa fa-star text-muted" data-value="1"></i>
+                                    <i class="fa fa-star text-muted" data-value="2"></i>
+                                    <i class="fa fa-star text-muted" data-value="3"></i>
+                                    <i class="fa fa-star text-muted" data-value="4"></i>
+                                    <i class="fa fa-star text-muted" data-value="5"></i>
+                                </div>
+                                <input type="hidden" id="rating" value="">
+                                <small class="text-danger d-none" id="ratingError">Please select a rating.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Review *</label>
+                                <textarea id="message" cols="30" rows="5" class="form-control" placeholder="Enter your review"></textarea>
+                                <small class="text-danger d-none" id="messageError">Review is required.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="images">Upload Images (Optional)</label>
+                                <input type="file" class="form-control" id="images" multiple accept="image/*">
+                                <div id="imagePreview" class="d-flex mt-2"></div>
                             </div>
                             <div class="form-group mb-0">
-                                <input type="submit" value="Leave a comment"
-                                    class="btn btn-primary font-weight-semi-bold py-2 px-3">
+                                <button type="submit" class="btn btn-primary font-weight-semi-bold py-2 px-3">Submit Review</button>
                             </div>
                         </form>
                     </div>
@@ -509,6 +571,283 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Clear previous errors
+            document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
+
+            let isValid = true;
+
+            // Validate Name
+            const name = document.getElementById('name').value.trim();
+            if (!name) {
+                document.getElementById('nameError').classList.remove('d-none');
+                isValid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                document.getElementById('emailError').classList.remove('d-none');
+                isValid = false;
+            }
+
+            // Validate Rating
+            const rating = document.getElementById('rating').value.trim();
+            if (!rating || rating < 1 || rating > 5) {
+                document.getElementById('ratingError').classList.remove('d-none');
+                isValid = false;
+            }
+
+            // Validate Message
+            const message = document.getElementById('message').value.trim();
+            if (!message) {
+                document.getElementById('messageError').classList.remove('d-none');
+                isValid = false;
+            }
+
+            // If valid, submit the form (you can replace this with an AJAX request)
+            if (isValid) {
+                alert('Form submitted successfully!');
+                // Optionally, reset the form
+                document.getElementById('commentForm').reset();
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('#starRating .fa-star');
+            const ratingInput = document.getElementById('rating');
+
+            // Handle star hover and click events
+            stars.forEach(star => {
+                star.addEventListener('mouseover', function () {
+                    const value = this.getAttribute('data-value');
+                    highlightStars(value);
+                });
+
+                star.addEventListener('mouseout', function () {
+                    highlightStars(ratingInput.value);
+                });
+
+                star.addEventListener('click', function () {
+                    const value = this.getAttribute('data-value');
+                    ratingInput.value = value;
+                    highlightStars(value);
+                });
+            });
+
+            function highlightStars(value) {
+                stars.forEach(star => {
+                    if (star.getAttribute('data-value') <= value) {
+                        star.classList.add('text-warning');
+                        star.classList.remove('text-muted');
+                    } else {
+                        star.classList.add('text-muted');
+                        star.classList.remove('text-warning');
+                    }
+                });
+            }
+
+            // Form validation
+            document.getElementById('reviewForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Clear previous errors
+                document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
+
+                let isValid = true;
+
+                // Validate Title
+                const title = document.getElementById('title').value.trim();
+                if (!title) {
+                    document.getElementById('titleError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Name
+                const name = document.getElementById('name').value.trim();
+                if (!name) {
+                    document.getElementById('nameError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Email
+                const email = document.getElementById('email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailRegex.test(email)) {
+                    document.getElementById('emailError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Rating
+                const rating = ratingInput.value.trim();
+                if (!rating) {
+                    document.getElementById('ratingError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    document.getElementById('messageError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // If valid, submit the form (you can replace this with an AJAX request)
+                if (isValid) {
+                    alert('Review submitted successfully!');
+                    document.getElementById('reviewForm').reset();
+                    highlightStars(0); // Reset stars
+                }
+            });
+        });
+    </script>
+
+    <!-- Reseñas Existentes -->
+    <div class="bg-white mb-5 p-4">
+        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">User Reviews</h4>
+        <div class="review-item mb-4">
+            <div class="d-flex align-items-center mb-2">
+                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
+                <div class="ml-3">
+                    <h6 class="mb-0">Emily O</h6>
+                    <small class="text-muted">4 months ago</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <div class="text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <small class="ml-2 text-muted">4.5/5</small>
+            </div>
+            <p>Great food. I had the cheese burger with added halloumi and chips, along with a mint lemonade. Service was quick and friendly!</p>
+            <div class="d-flex">
+                <img src="img/review-1.jpg" alt="Review Image" class="img-fluid mr-2" style="width: 100px; height: 100px;">
+                <img src="img/review-2.jpg" alt="Review Image" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('#starRating .fa-star');
+            const ratingInput = document.getElementById('rating');
+            const imageInput = document.getElementById('images');
+            const imagePreview = document.getElementById('imagePreview');
+
+            // Handle star hover and click events
+            stars.forEach(star => {
+                star.addEventListener('mouseover', function () {
+                    const value = this.getAttribute('data-value');
+                    highlightStars(value);
+                });
+
+                star.addEventListener('mouseout', function () {
+                    highlightStars(ratingInput.value);
+                });
+
+                star.addEventListener('click', function () {
+                    const value = this.getAttribute('data-value');
+                    ratingInput.value = value;
+                    highlightStars(value);
+                });
+            });
+
+            function highlightStars(value) {
+                stars.forEach(star => {
+                    if (star.getAttribute('data-value') <= value) {
+                        star.classList.add('text-warning');
+                        star.classList.remove('text-muted');
+                    } else {
+                        star.classList.add('text-muted');
+                        star.classList.remove('text-warning');
+                    }
+                });
+            }
+
+            // Image preview
+            imageInput.addEventListener('change', function () {
+                imagePreview.innerHTML = '';
+                Array.from(this.files).forEach(file => {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.classList.add('img-fluid', 'mr-2');
+                        img.style.width = '100px';
+                        img.style.height = '100px';
+                        imagePreview.appendChild(img);
+                    };
+                    reader.readAsDataURL(file);
+                });
+            });
+
+            // Form validation
+            document.getElementById('reviewForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Clear previous errors
+                document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
+
+                let isValid = true;
+
+                // Validate Title
+                const title = document.getElementById('title').value.trim();
+                if (!title) {
+                    document.getElementById('titleError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Name
+                const name = document.getElementById('name').value.trim();
+                if (!name) {
+                    document.getElementById('nameError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Email
+                const email = document.getElementById('email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailRegex.test(email)) {
+                    document.getElementById('emailError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Rating
+                const rating = ratingInput.value.trim();
+                if (!rating) {
+                    document.getElementById('ratingError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // Validate Message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    document.getElementById('messageError').classList.remove('d-none');
+                    isValid = false;
+                }
+
+                // If valid, submit the form
+                if (isValid) {
+                    alert('Review submitted successfully!');
+                    document.getElementById('reviewForm').reset();
+                    imagePreview.innerHTML = '';
+                    highlightStars(0); // Reset stars
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
