@@ -24,5 +24,4 @@ Este proyecto consiste en una página web colaborativa donde se muestran reseña
 
 ---
 
-## 🗂️ Estructura del Proyecto
 
