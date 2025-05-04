@@ -3,19 +3,49 @@
     
     // Dropdown on mouse hover
     $(document).ready(function () {
+
+        // Dropdown con hover
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
+                $('.navbar .dropdown').hover(
+                    function () {
+                        $(this).addClass('show');
+                        $(this).find('.dropdown-toggle').attr('aria-expanded', 'true');
+                        $(this).find('.dropdown-menu').addClass('show');
+                    },
+                    function () {
+                        $(this).removeClass('show');
+                        $(this).find('.dropdown-toggle').attr('aria-expanded', 'false');
+                        $(this).find('.dropdown-menu').removeClass('show');
+                    }
+                );
             } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
+                $('.navbar .dropdown').off('mouseenter mouseleave');
             }
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
+
+        // Carrusel de galería
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            navText: [
+                "<span class='btn btn-primary'>Anterior</span>",
+                "<span class='btn btn-primary'>Siguiente</span>"
+            ],
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                768: { items: 3 },
+                992: { items: 3 }
+            }
+        });
+        
     });
 
     //Filtro de busqueda y categoria
@@ -91,6 +121,8 @@
             }
         }
     });
+
+
     
 })(jQuery);
 
