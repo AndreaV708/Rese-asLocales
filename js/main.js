@@ -17,8 +17,34 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+    //Filtro de busqueda y categoria
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const packageItems = document.querySelectorAll('.package-item');
+
+    function filterPackages() {
+        const search = searchInput.value.toLowerCase();
+        const category = categoryFilter.value.toLowerCase();
+
+        packageItems.forEach(item => {
+            const title = item.querySelector('h5')?.innerText.toLowerCase();
+            const type = item.getAttribute('data-type')?.toLowerCase();
+
+            const matchesSearch = !search || (title && title.includes(search));
+            const matchesCategory = !category || type === category;
+
+            item.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
+        });
+    }
+
+    if (searchInput && categoryFilter) {
+        searchInput.addEventListener('input', filterPackages);
+        categoryFilter.addEventListener('change', filterPackages);
+    }
+
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
