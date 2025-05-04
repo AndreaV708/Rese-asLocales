@@ -18,10 +18,8 @@ Este proyecto consiste en una página web colaborativa donde se muestran reseña
 | **UI Locales Recomendados** | Cambiar textos e imágenes del home para reflejar locales cercanos | `feature/home-update` | Crear sección “Locales Recomendados” con tarjetas | `feature/recommended-cards` |
 | **UI Formulario Reseñas** | Diseñar y codificar el formulario para agregar una reseña | `feature/review-form` | Validar datos del formulario (nombre del local, texto, rating) | `feature/form-validation` |
 | **UI Estructura & Filtros** | Implementar búsqueda/filtros por tipo de local (comida, copias, etc.) | `feature/local-filters` | Organizar archivos: index.html, css/, img/, js/ | `chore/file-structure` |
-| **UI About & Traducción** | Adaptar sección "About" con propósito y equipo | `feature/about-us` | Traducir sitio completo al español | `chore/translate-site` |
-| **UI Mapa & Contacto** | Implementar sección con Google Maps mostrando locales | `feature/map-section` | Crear página de “Contacto” con formulario y redes sociales | `feature/contact-page` |
-| **Backend & QA Líder** | Subir archivos al repositorio y agregar colaboradores | `chore/init-github` | Crear JSON de reseñas y conexión con HTML via JS (simulación backend) | `feature/fetch-reviews` |
-
+| **UI About ** | Adaptar sección "About" con propósito y equipo | `feature/about-us` | Implementar sección con Google Maps mostrando locales | `feature/map-section`
+| **Backend & QA Líder** | Subir archivos al repositorio y agregar colaboradores | `chore/init-github` |Crear página de “Contacto” con formulario y redes sociales | `feature/contact-page` |
 ---
 
 
