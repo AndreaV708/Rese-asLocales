@@ -4,6 +4,11 @@
 <head>
     <meta charset="utf-8">
 
+    <title>VIAJERO - Plantilla Gratuita para Sitios Web de Viajes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Plantillas HTML Gratuitas" name="keywords">
+    <meta content="Plantillas HTML Gratuitas" name="description">
+
     <title>Lugares Recomendados - UTAvisor</title> <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Locales UTA, lugares Ambato, recomendaciones estudiantes, comida cerca UTA, copias UTA" name="keywords"> <meta content="Encuentra y filtra los mejores locales recomendados por estudiantes cerca de la Universidad Técnica de Ambato: comida, servicios, estudio y más." name="description"> <link href="img/favicon.ico" rel="icon"> <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +53,6 @@
     </div>
     <!-- Barra Superior Fin -->
 
-
     <!-- Barra de Navegación Inicio -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
@@ -82,15 +86,17 @@
         </div>
     </div>
 
+    <!-- Barra de Navegación Fin -->
+
+    <!-- Encabezado Inicio -->
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-
-                <h3 class="display-4 text-white text-uppercase">Services</h3>
+                <h3 class="display-4 text-white text-uppercase">Lugares</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Servicios</p>
+                    <p class="m-0 text-uppercase">Paquetes Turísticos</p>
                 </div>
             </div>
         </div>
@@ -106,133 +112,312 @@
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Lugares</h6>
-                <h1>Encuentra Locales Recomendados</h1> </div>
 
-             <div class="row mb-4 justify-content-center">
-                 <div class="col-md-6">
-                     <div class="input-group mb-2">
-                        <input type="text" id="searchInput" placeholder="Buscar por nombre..." class="form-control form-control-lg">
-                         <div class="input-group-append">
-                             <span class="input-group-text"><i class="fa fa-search"></i></span>
-                         </div>
-                    </div>
-                    <select id="categoryFilter" class="custom-select custom-select-lg">
-                        <option value="">Todas las categorías</option>
-                        <option value="comida">Comida y Bebida</option>
-                        <option value="servicios">Servicios (Copias, Cyber)</option>
-                        <option value="estudio">Estudio / Trabajo</option>
-                        <option value="recreacion">Recreación / Deporte</option>
-                        <option value="compras">Compras (Librería, Papelería)</option>
-                        <option value="otros">Otros</option>
-                        </select>
-                 </div>
-             </div>
+                <h1>Sitios Turísticos en Ecuador</h1>
+            </div>
 
-             <div class="row" id="packagesContainer">
-
-                <div class="col-lg-4 col-md-6 mb-4 package-item" data-category="comida">
-                    <div class="bg-white shadow-sm rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/Chamiko Food and Friends principal.jpg" alt="Chamiko Food and Friends" style="height: 250px; object-fit: cover;">
+            <!-- Contenedor de tarjetas -->
+            <div class="row" id="placesContainer">
+                <!-- 1. Ayampe (Costa) -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="playas">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Ayampe.jpg" alt="Ayampe">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cerca Campus Huachi</small>
-                                <small class="m-0"><i class="fa fa-utensils text-primary mr-2"></i>Comida</small> </div>
-                            <a class="h5 text-decoration-none" href="single.html#chamiko">Chamiko Food and Friends</a> <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.0 <small>(aprox.)</small></h6>
-                                    <h5 class="m-0 text-muted">$$</h5>
-                                </div>
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Ayampe, Manabí</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.7</small>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-lg-4 col-md-6 mb-4 package-item" data-category="comida">
-                     <div class="bg-white shadow-sm rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/la monita Verde P.jpg" alt="La Monita Verde" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cerca Campus Ingahuacho</small>
-                                <small class="m-0"><i class="fa fa-coffee text-primary mr-2"></i>Cafetería</small>
-                                </div>
-                            <a class="h5 text-decoration-none" href="single.html#monitaverde">La Monita Verde</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(aprox.)</small></h6>
-                                    <h5 class="m-0 text-muted">$</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-lg-4 col-md-6 mb-4 package-item" data-category="servicios">
-                     <div class="bg-white shadow-sm rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/copias.jpg" alt="Centro de Copiado" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Av. Los Chasquis</small>
-                                <small class="m-0"><i class="fa fa-print text-primary mr-2"></i>Copias</small>
-                                </div>
-                            <a class="h5 text-decoration-none" href="single.html#copiasx">Centro de Copiado "El Estudiante"</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-thumbs-up text-primary mr-2"></i>Rápido</h6> <h5 class="m-0 text-muted">$</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-lg-4 col-md-6 mb-4 package-item" data-category="compras">
-                     <div class="bg-white shadow-sm rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/libreria.jpg" alt="Librería/Papelería" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cerca Biblioteca Central</small>
-                                <small class="m-0"><i class="fa fa-book text-primary mr-2"></i>Papelería</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="single.html#papeleria_abc">Papelería ABC</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                     <h6 class="m-0"><i class="fa fa-check-circle text-primary mr-2"></i>Surtido</h6>
-                                     <h5 class="m-0 text-muted">$$</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-lg-4 col-md-6 mb-4 package-item" data-category="estudio">
-                     <div class="bg-white shadow-sm rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/estudiante.png" alt="Café para estudiar" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sector Miraflores</small>
-                                <small class="m-0"><i class="fa fa-wifi text-primary mr-2"></i>WiFi</small>
-                                <small class="m-0"><i class="fa fa-plug text-primary mr-2"></i>Tomas</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="single.html#cafe_estudio">Café del Lector</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                     <h6 class="m-0"><i class="fa fa-volume-mute text-primary mr-2"></i>Tranquilo</h6>
-                                     <h5 class="m-0 text-muted">$$</h5>
-                                </div>
+                            <h5 class="text-dark">Ayampe</h5>
+                            <p class="text-muted">"Un lugar perfecto para desconectarse. La tranquilidad de la playa y la amabilidad de la gente hicieron que mi experiencia fuera inolvidable." - María, estudiante de turismo.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Gratuita</h6>
+                                <a href="https://goo.gl/maps/qAw1EmNGPbFvS1XSA" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-            </div> </div>
-    </div>
+                <!-- 2. Quilotoa (Sierra) -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="montañas">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/LaguanaQuilotao.jpg" alt="Quilotoa">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Quilotoa, Cotopaxi</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+                            </div>
+                            <h5 class="text-dark">Laguna de Quilotoa</h5>
+                            <p class="text-muted">"La caminata hasta el cráter fue desafiante, pero la vista de la laguna es impresionante. Definitivamente vale la pena visitarlo." - Juan, estudiante de biología.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada $2</h6>
+                                <a href="https://goo.gl/maps/KCCQJdLCYoK2" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div id="footer-placeholder">
+
+                <!-- 3. Puyo (Amazonía) -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="parques">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/PaseoSelva.jpg" alt="Puyo">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Puyo, Pastaza</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.6</small>
+                            </div>
+                            <h5 class="text-dark">Paseo por la Selva</h5>
+                            <p class="text-muted">"Explorar la selva fue una experiencia única. Aprendí mucho sobre las comunidades indígenas y la biodiversidad." - Sofía, estudiante de ecología.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Tour desde $20</h6>
+                                <a href="https://goo.gl/maps/NuEkTnGGR7wFihrZ7" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 4. Galápagos -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="aventura">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/IslasGalapagos.jpg" alt="Galápagos">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Islas Galápagos</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>5.0</small>
+                            </div>
+                            <h5 class="text-dark">Archipiélago Galápagos</h5>
+                            <p class="text-muted">"Bucear en Galápagos fue increíble. Ver tortugas gigantes y tiburones fue lo mejor de mi viaje." - Andrés, estudiante de biología marina.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Ingreso con Tarifa</h6>
+                                <a href="https://goo.gl/maps/WZm17XeZphhBZWd98" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <!-- 5. La Mariscal -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="vida-nocturna">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/LaMariscal.jpg" alt="La Mariscal">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Quito, Ecuador</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.3</small>
+                            </div>
+                            <h5 class="text-dark">La Mariscal</h5>
+                            <p class="text-muted">"La vida nocturna aquí es vibrante. Disfruté de la música en vivo y la variedad de bares. Es un lugar perfecto para socializar." - Ana, estudiante de comunicación.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Variable</h6>
+                                <a href="https://www.google.com/maps/place/galapagos/data=!4m2!3m1!1s0x9021d9b43bec07cd:0xfb3e68fef05dae23?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 6. Salinas -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="playas">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Salinas.jpg" alt="Salinas">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Salinas, Santa Elena</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.5</small>
+                            </div>
+                            <h5 class="text-dark">Salinas</h5>
+                            <p class="text-muted">"Las playas son hermosas y perfectas para relajarse. También disfruté de los deportes acuáticos y la comida local." - Carlos, estudiante de ingeniería civil.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Gratuita</h6>
+                                <a href="https://www.google.com/maps/place/Salinas/data=!4m2!3m1!1s0x902e0e3633717003:0xbdb03525bc936c45?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 7. Cuenca -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="cultura">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/CentroHistoricoCuenca.jpg" alt="Cuenca">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cuenca, Azuay</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.8</small>
+                            </div>
+                            <h5 class="text-dark">Centro Histórico de Cuenca</h5>
+                            <p class="text-muted">"Caminar por las calles de Cuenca es como viajar en el tiempo. La arquitectura colonial es impresionante." - Valeria, estudiante de arquitectura.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Libre</h6>
+                                <a href="https://www.google.com/maps/place/Centro+Hist%C3%B3rico+de+Cuenca/data=!4m2!3m1!1s0x91cd181a05a1bad7:0x8e89131a3d24ec2b?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 8. Yasuní -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="parques">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/ParqueNacionalYasuni.jpg" alt="Yasuní">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Yasuní, Orellana</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>5.0</small>
+                            </div>
+                            <h5 class="text-dark">Parque Nacional Yasuní</h5>
+                            <p class="text-muted">"La biodiversidad aquí es increíble. Aprendí mucho sobre la flora y fauna de la Amazonía." - Diego, estudiante de biología.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Desde $30</h6>
+                                <a href="https://www.google.com/maps/place/Parque+Nacional+Yasun%C3%AD/data=!4m2!3m1!1s0x91d9926c016b72b7:0x7a5c3261400b69a1?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 9. Centro Charles Darwin -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="museos">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Centro Charles Darwin.jpg" alt="Centro Darwin">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Santa Cruz, Galápagos</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+                            </div>
+                            <h5 class="text-dark">Centro Charles Darwin</h5>
+                            <p class="text-muted">"Aprendí sobre los esfuerzos de conservación en Galápagos. Ver las tortugas gigantes fue increíble." - Andrés, estudiante de ciencias ambientales.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada $10</h6>
+                                <a href="https://www.google.com/maps/search/centro+charles+darwin+galapagos/@-0.8033489,-90.1098633,106118m/data=!3m1!1e3!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 10. Playas de Esmeraldas (Costa) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="playas">
+    <div class="package-item bg-white shadow-sm rounded mb-2">
+        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Playas de Esmeraldas.jpg" alt="Playas de Esmeraldas">
+        <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Esmeraldas, Ecuador</small>
+                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.2</small>
+            </div>
+            <h5 class="text-dark">Playas de Esmeraldas</h5>
+            <p class="text-muted">"Las playas de Esmeraldas son un paraíso. La calidez de la gente y la comida típica hicieron de mi visita algo inolvidable." - Gabriela, estudiante de gastronomía.</p>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <h6 class="text-primary">Entrada Gratuita</h6>
+                <a href="https://www.google.com/maps/place/Esmeraldas/@1.0517954,-79.7638506,53281m/data=!3m1!1e3" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+            </div>
         </div>
+    </div>
+</div>
+
+<!-- 11. Volcán Chimborazo (Sierra) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="montañas">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Volcán Chimborazo.jpg" alt="Volcán Chimborazo">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Chimborazo, Ecuador</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+        </div>
+        <h5 class="text-dark">Volcán Chimborazo</h5>
+        <p class="text-muted">"Escalar el Chimborazo fue un reto increíble. La vista desde la cima es algo que nunca olvidaré." - Luis, estudiante de deportes extremos.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Gratuita</h6>
+            <a href="https://www.google.com/maps/place/Volc%C3%A1n+Chimborazo/data=!4m2!3m1!1s0x91d372d7706a480b:0x69d5c66d2e629dff" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 12. Rafting en Tena (Amazonía) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="aventura">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Rafting en Tena.jpg   " alt="Rafting en Tena">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tena, Napo</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.7</small>
+        </div>
+        <h5 class="text-dark">Rafting en Tena</h5>
+        <p class="text-muted">"El rafting en los ríos de Tena fue emocionante. La naturaleza que rodea el lugar es espectacular." - Andrés, estudiante de ecoturismo.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Desde $25</h6>
+            <a href="https://www.google.com/maps/search/Rafting+en+Tena/@-1.3325215,-78.954895,8z?entry=s&sa=X" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 13. Tortuga Bay (Galápagos) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="parques">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Tortuga Bay.jpg" alt="Tortuga Bay">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Santa Cruz, Galápagos</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+        </div>
+        <h5 class="text-dark">Tortuga Bay</h5>
+        <p class="text-muted">"La playa más hermosa que he visitado. Las aguas cristalinas y la fauna marina son impresionantes." - Camila, estudiante de biología marina.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Gratuita</h6>
+            <a href="https://www.google.com/search?q=Tortuga+Bay" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 14. Mercado de Otavalo (Sierra) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="cultura">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Mercado De Otavalo.jpg" alt="Mercado de Otavalo">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Otavalo, Imbabura</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.6</small>
+        </div>
+        <h5 class="text-dark">Mercado de Otavalo</h5>
+        <p class="text-muted">"Un lugar lleno de cultura y tradición. Los textiles y artesanías son únicos." - Valeria, estudiante de diseño textil.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Libre</h6>
+            <a href="https://www.google.com/maps/search/Mercado+de+Otavalo/@0.2254938,-78.2689533,3316m/data=!3m1!1e3" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 15. Kicker Rock (Galápagos) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="aventura">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Kicker Rock.jpg" alt="Kicker Rock">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>San Cristóbal, Galápagos</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+        </div>
+        <h5 class="text-dark">Kicker Rock</h5>
+        <p class="text-muted">"Formación rocosa icónica para buceo con tiburones martillo y vida marina única." - Javier, estudiante de biología marina.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Tour desde $80</h6>
+            <a href="https://www.google.com/maps/place/L%C3%A9on+Dormido/@-0.8382631,-90.0792774,732406m/data=!3m1!1e3!4m6!3m5!1s0x9000e51a2a6e27b9:0x8a5dd51f37fcd815!8m2!3d-0.7767284!4d-89.5199753!16s%2Fg%2F1pxyk2j2l!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer-placeholder">
+</div>
+
+
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -243,72 +428,58 @@
 
     <script src="js/main.js"></script>
 
-    <script>
+    <script src="js/main.js"></script> <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // --- Funcionalidad de Filtros ---
-            const searchInput = document.getElementById('searchInput');
-            const categoryFilter = document.getElementById('categoryFilter');
-            const packagesContainer = document.getElementById('packagesContainer');
-            const packageItems = packagesContainer.querySelectorAll('.package-item'); // Obtener todos los items una vez
-
-            function filterPackages() {
-                const searchTerm = searchInput.value.toLowerCase();
-                const selectedCategory = categoryFilter.value;
-
-                packageItems.forEach(item => {
-                    const titleElement = item.querySelector('.h5'); // Elemento que contiene el nombre del local
-                    const title = titleElement ? titleElement.textContent.toLowerCase() : '';
-                    const itemCategory = item.getAttribute('data-category');
-
-                    const matchesSearch = title.includes(searchTerm);
-                    const matchesCategory = selectedCategory === "" || itemCategory === selectedCategory;
-
-                    // Mostrar item si coincide con ambos filtros
-                    if (matchesSearch && matchesCategory) {
-                        item.classList.remove('d-none');
-                    } else {
-                        item.classList.add('d-none');
-                    }
+            // --- Manejar Formulario de Recomendación --- 
+            fetch('footer.html') // Asegúrate que la ruta 'footer.html' sea correcta
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+                // Si el footer o el botón back-to-top necesitan JS específico
+                // que está en main.js, asegúrate que main.js se ejecute
+                // o que la función necesaria se llame DESPUÉS de cargar el footer.
+                // Por ejemplo, si main.js inicializa el botón back-to-top:
+                // if (typeof initBackToTop === 'function') { initBackToTop(); }
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                document.getElementById('footer-placeholder').innerHTML = '<p class="text-center text-danger">Error al cargar el pie de página.</p>';
+            });
+            const recommendForm = document.getElementById('recommendForm');
+            if (recommendForm) {
+                recommendForm.addEventListener('submit', function (e) {
+                    e.preventDefault(); // Prevenir envío normal del formulario
+    
+                    const formData = new FormData(this); // Obtener los datos del formulario
+                    const statusMessage = document.getElementById('statusMessage');
+                    statusMessage.innerHTML = '<div class="alert alert-info">Enviando...</div>'; // Mensaje de espera
+    
+                    // Enviar los datos por AJAX sin recargar la página
+                    fetch('mail/send_recommendation.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.text()) // O response.json() si PHP devuelve JSON
+                    .then(responseText => {
+                        // Mostrar el mensaje de éxito debajo del formulario
+                        statusMessage.innerHTML = `<div class="alert alert-success">${responseText}</div>`;
+                        recommendForm.reset(); // Limpiar formulario
+                    })
+                    .catch(error => {
+                        // Mostrar mensaje de error si ocurre un fallo
+                        statusMessage.innerHTML = `<div class="alert alert-danger">Error al enviar la recomendación. Inténtalo de nuevo.</div>`;
+                        console.error('Error:', error);
+                    });
                 });
             }
-
-            // Event listeners para los filtros
-            if(searchInput) searchInput.addEventListener('input', filterPackages);
-            if(categoryFilter) categoryFilter.addEventListener('change', filterPackages);
-
-             // Llamada inicial por si hay valores preseleccionados (poco probable aquí)
-             // filterPackages();
-
-
-            // --- Cargar Footer ---
-            fetch('footer.html') // Asegúrate que la ruta 'footer.html' sea correcta
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    return response.text();
-                })
-                .then(html => {
-                    const footerPlaceholder = document.getElementById('footer-placeholder');
-                    if(footerPlaceholder){
-                         footerPlaceholder.innerHTML = html;
-                        // Re-inicializar JS si es necesario para el footer/back-to-top
-                         // if (typeof initBackToTop === 'function') { initBackToTop(); }
-                         // Asegúrate que el main.js ya maneja el back-to-top si lo carga el footer
-                         if (typeof $.fn.easing === 'undefined') { console.warn("jQuery Easing not loaded, back-to-top might not animate smoothly.");} // Check si easing está cargado
-                    } else {
-                        console.error("Footer placeholder not found!");
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading footer:', error);
-                     const footerPlaceholder = document.getElementById('footer-placeholder');
-                     if(footerPlaceholder) {
-                         footerPlaceholder.innerHTML = '<p class="text-center text-danger">Error al cargar el pie de página.</p>';
-                     }
-                });
-        }); // Fin DOMContentLoaded
+        });
     </script>
+        
 
 </body>
 </html>
