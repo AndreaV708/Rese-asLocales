@@ -3,137 +3,108 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TRAVELER - Free Travel Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <title>Blog - UTAvisor</title> <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Blog UTAvisor, reseñas locales UTA, experiencias estudiantes Ambato" name="keywords"> <meta content="Lee las últimas reseñas y experiencias de estudiantes sobre locales y servicios cerca de la Universidad Técnica de Ambato." name="description"> <link href="img/favicon.ico" rel="icon"> <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
+        /* Estilos para las estrellas y reviews (ya estaban en tu código) */
         .fa-star {
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.5rem; /* Tamaño ajustado */
         }
-
-        .fa-star.text-warning {
-            color: #ffc107;
+        .fa-star.text-warning { /* Usar warning para amarillo de Bootstrap */
+             color: #ffc107 !important;
         }
-
         .fa-star.text-muted {
-            color: #e4e5e9;
+             color: #e4e5e9 !important; /* Color grisáceo */
         }
-
         .review-item {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
+            border-bottom: 1px solid #eee; /* Borde más suave */
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
         }
-
         .review-item:last-child {
             border-bottom: none;
+            margin-bottom: 0;
+        }
+         /* Estilo para resaltar formulario al hacer clic en enlace */
+        #reviewForm.border-primary {
+            border-color: #007bff !important; /* Asegura que el color sea visible */
+            transition: border-color 0.3s ease-in-out;
         }
     </style>
 </head>
 
 <body>
-    <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
                         <a href="contact.html" class="text-dark px-2">
-                            💬 ¿Tienes una recomendación? <strong>¡Escríbenos!</strong>
+                             💬 ¿Tienes una recomendación? <strong>¡Escríbenos!</strong>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-primary pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                 <div class="col-lg-6 text-center text-lg-right">
+                     <div class="d-inline-flex align-items-center">
+                         <a class="text-primary px-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-primary px-3" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-primary px-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-primary px-3" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-primary pl-3" href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">UTA</span>visor</h1>
+                <a href="index.html" class="navbar-brand"> <h1 class="m-0 text-primary"><span class="text-dark">UTA</span>visor</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Bienvenidos</a>
+                        <a href="index.html" class="nav-item nav-link">Bienvenidos</a>
                         <a href="about.html" class="nav-item nav-link">Sobre</a>
-                        <a href="service.html" class="nav-item nav-link">Cosas que hacer</a>
                         <a href="package.html" class="nav-item nav-link">Lugares</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Paginas</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Páginas</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item active">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="blog.html" class="dropdown-item active">Blog</a>
+                                <a href="single.html" class="dropdown-item">Detalle Blog</a>
+                                <a href="destination.html" class="dropdown-item">Destinos</a>
+                                <a href="guide.html" class="dropdown-item">Guías</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonios</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Blog</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <h3 class="display-4 text-white text-uppercase">Blog / Reseñas</h3> <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p> <i class="fa fa-angle-double-right pt-1 px-3"></i>
                     <p class="m-0 text-uppercase">Blog</p>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Header End -->
 
 
@@ -167,263 +138,165 @@
                                     <a class="text-primary text-uppercase text-decoration-none" href="">Tours</a>
                                 </div>
                                 <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 1">Discover the hidden gems of Place 1</a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4 pb-2">
+                             <div class="blog-item shadow-sm">
+                                <div class="position-relative">
+                                     <a href="#reviewsContainer" class="review-link" data-local="La Monita Verde">
+                                        <img class="img-fluid w-100" src="img/la monita Verde P.jpg" alt="La Monita Verde">
+                                    </a>
+                                    <div class="blog-date">
+                                         <h6 class="font-weight-bold mb-n1">12</h6> <small class="text-white text-uppercase">Abr</small>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-4">
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Batidos</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Desayunos</a>
+                                    </div>
+                                     <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="La Monita Verde">La Monita Verde: Ideal para empezar el día</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    <div id="reviewsContainer" class="container mt-5 pt-5"> <h2 class="text-center mb-4">Añade o Lee Reseñas</h2>
+                         <form id="reviewForm" class="bg-light p-4 shadow mb-5 rounded">
+                             <h4 id="reviewFormTitle" class="text-center text-primary mb-4">Selecciona un local para reseñar</h4>
+                             <input type="hidden" id="localName" value="">
+
+                             <div class="form-group">
+                                 <label for="rating">Tu Calificación:</label>
+                                 <div id="starRating" class="d-flex align-items-center">
+                                     <i class="fa fa-star text-muted" data-value="1"></i>
+                                     <i class="fa fa-star text-muted" data-value="2"></i>
+                                     <i class="fa fa-star text-muted" data-value="3"></i>
+                                     <i class="fa fa-star text-muted" data-value="4"></i>
+                                     <i class="fa fa-star text-muted" data-value="5"></i>
+                                 </div>
+                                 <input type="hidden" id="rating" name="rating" value="">
+                                 <small class="text-danger d-none" id="ratingError">Por favor selecciona una calificación.</small>
+                             </div>
+
+                             <div class="form-group">
+                                 <label for="reviewText">Tu Reseña:</label>
+                                 <textarea id="reviewText" name="reviewText" cols="30" rows="4" class="form-control" placeholder="Escribe tu opinión sobre este local..."></textarea>
+                                 <small class="text-danger d-none" id="reviewTextError">El texto de la reseña es obligatorio.</small>
+                             </div>
+
+                             <div class="form-group mb-0 text-center">
+                                 <button type="submit" class="btn btn-primary font-weight-semi-bold py-2 px-4">Enviar Reseña</button>
+                             </div>
+                         </form>
+
+                         <div id="reviewsListContainer" class="mt-5">
+                             <h3 class="text-center mb-4">Reseñas Recientes</h3>
+                             <div id="reviewsList" class="bg-white p-4 shadow rounded">
+                                 <p class="text-center text-muted">Selecciona un local para ver sus reseñas.</p>
+                             </div>
+                             </div>
+                     </div> </div> <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4 shadow-sm rounded">
+                        <img src="img/user.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
+                        <h3 class="text-primary mb-3">Equipo UTAvisor</h3>
+                        <p>Compartiendo las mejores experiencias y locales cerca de la UTA. ¡Únete a nuestra comunidad!</p>
+                        <div class="d-flex justify-content-center">
+                             <a class="text-primary px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                             <a class="text-primary px-2" href="#"><i class="fab fa-twitter"></i></a>
+                             <a class="text-primary px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                             <a class="text-primary px-2" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="bg-white shadow-sm rounded p-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control p-4" placeholder="Buscar local...">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-primary border-primary text-white"><i class="fa fa-search"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 2 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 2">
-                                    <img class="img-fluid w-100" src="img/blog-2.jpg" alt="Place 2">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">02</h6>
-                                    <small class="text-white text-uppercase">Feb</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Travel</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 2">A journey through Place 2’s landscapes</a>
-                            </div>
+                    <div class="mb-5">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categorías</h4>
+                        <div class="bg-white shadow-sm rounded p-4">
+                            <ul class="list-inline m-0">
+                                <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Restaurantes</a>
+                                    <span class="badge badge-primary badge-pill">15</span> </li>
+                                 <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Cafeterías</a>
+                                    <span class="badge badge-primary badge-pill">10</span>
+                                </li>
+                                 <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Copias/Impresión</a>
+                                    <span class="badge badge-primary badge-pill">8</span>
+                                </li>
+                                <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Bares/Snacks</a>
+                                    <span class="badge badge-primary badge-pill">7</span>
+                                </li>
+                                <li class="py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Librerías</a>
+                                    <span class="badge badge-primary badge-pill">5</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!-- 3 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 3">
-                                    <img class="img-fluid w-100" src="img/blog-3.jpg" alt="Place 3">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">03</h6>
-                                    <small class="text-white text-uppercase">Mar</small>
+                    <div class="mb-5">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Últimas Reseñas</h4>
+                         <div class="bg-white shadow-sm rounded p-4">
+                            <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
+                                <img class="img-fluid rounded" src="img/blog-1.jpg" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                                <div class="pl-3">
+                                    <h6 class="m-1">Review sobre Local X</h6>
+                                    <small>Ene 01, 2025</small>
                                 </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Editor</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Explore</a>
+                            </a>
+                             <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
+                                <img class="img-fluid rounded" src="img/blog-2.jpg" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                                <div class="pl-3">
+                                    <h6 class="m-1">Review sobre Local Y</h6>
+                                    <small>Ene 01, 2025</small>
                                 </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 3">Cultural wonders of Place 3</a>
-                            </div>
+                            </a>
+                             <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img class="img-fluid rounded" src="img/blog-3.jpg" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                                <div class="pl-3">
+                                    <h6 class="m-1">Review sobre Local Z</h6>
+                                    <small>Ene 01, 2025</small>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- 4 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 4">
-                                    <img class="img-fluid w-100" src="img/blog-1.jpg" alt="Place 4">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">04</h6>
-                                    <small class="text-white text-uppercase">Apr</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Nature</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 4">Top hikes in Place 4</a>
-                            </div>
+                    <div class="mb-5">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Etiquetas Populares</h4>
+                        <div class="d-flex flex-wrap m-n1">
+                            <a href="" class="btn btn-light btn-sm m-1">Barato</a>
+                            <a href="" class="btn btn-light btn-sm m-1">Rápido</a>
+                            <a href="" class="btn btn-light btn-sm m-1">Buen ambiente</a>
+                            <a href="" class="btn btn-light btn-sm m-1">WiFi Gratis</a>
+                            <a href="" class="btn btn-light btn-sm m-1">Para grupos</a>
+                            <a href="" class="btn btn-light btn-sm m-1">Tranquilo</a>
+                            <a href="" class="btn btn-light btn-sm m-1">Cerca Ingahuacho</a>
+                            <a href="" class="btn btn-light btn-sm m-1">Cerca Huachi</a>
                         </div>
                     </div>
-
-                    <!-- 5 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 5">
-                                    <img class="img-fluid w-100" src="img/blog-2.jpg" alt="Place 5">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">05</h6>
-                                    <small class="text-white text-uppercase">May</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Team</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Adventure</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 5">Thrilling adventures in Place 5</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 6 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 6">
-                                    <img class="img-fluid w-100" src="img/blog-3.jpg" alt="Place 6">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">06</h6>
-                                    <small class="text-white text-uppercase">Jun</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Editor</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Culture</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 6">Hidden history of Place 6</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 7 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 7">
-                                    <img class="img-fluid w-100" src="img/blog-1.jpg" alt="Place 7">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">07</h6>
-                                    <small class="text-white text-uppercase">Jul</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Writer</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Experience</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 7">Experiences in Place 7</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 8 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <a href="#reviewsContainer" class="review-link" data-local="Place 8">
-                                    <img class="img-fluid w-100" src="img/blog-2.jpg" alt="Place 8">
-                                </a>
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">08</h6>
-                                    <small class="text-white text-uppercase">Aug</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Author</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Leisure</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none review-link" href="#reviewsContainer" data-local="Place 8">Relaxation spots in Place 8</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-
-            <!-- Sidebar (no se modifica) -->
-            <div class="col-lg-4 mt-5 mt-lg-0">
-                <!-- Aquí va tu contenido del sidebar -->
-            </div>
+                </div>
         </div>
     </div>
-</div>
-<!-- Blog End -->
-
-
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
-                </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="footer-placeholder">
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -432,201 +305,34 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    <!-- Review Submission Script -->
-    <script>
-        $(document).ready(function() {
-            // Star rating hover effect
-            $('#starRating i').hover(function() {
-                var onStar = parseInt($(this).data('value'), 10); // The star currently hovered
-                $(this).parent().children('i').each(function(index) {
-                    if (index < onStar) {
-                        $(this).removeClass('text-muted').addClass('text-primary');
-                    } else {
-                        $(this).removeClass('text-primary').addClass('text-muted');
-                    }
-                });
-            }, function() {
-                $('#starRating i').removeClass('text-primary').addClass('text-muted');
-                var ratingValue = parseInt($('#rating').val(), 10);
-                if (!isNaN(ratingValue)) {
-                    $('#starRating i').each(function(index) {
-                        if (index < ratingValue) {
-                            $(this).removeClass('text-muted').addClass('text-primary');
-                        } else {
-                            $(this).removeClass('text-primary').addClass('text-muted');
-                        }
-                    });
-                }
-            });
-
-            // Star rating click event
-            $('#starRating i').click(function() {
-                var onStar = parseInt($(this).data('value'), 10);
-                $('#rating').val(onStar);
-                $('#ratingError').addClass('d-none');
-            });
-
-            // Review form submission
-            $('#reviewForm').submit(function(e) {
-                e.preventDefault();
-
-                // Validate form fields
-                var isValid = true;
-                if ($('#localName').val() === '') {
-                    $('#localNameError').removeClass('d-none');
-                    isValid = false;
-                } else {
-                    $('#localNameError').addClass('d-none');
-                }
-
-                if ($('#rating').val() === '') {
-                    $('#ratingError').removeClass('d-none');
-                    isValid = false;
-                } else {
-                    $('#ratingError').addClass('d-none');
-                }
-
-                if ($('#reviewText').val().trim() === '') {
-                    $('#reviewTextError').removeClass('d-none');
-                    isValid = false;
-                } else {
-                    $('#reviewTextError').addClass('d-none');
-                }
-
-                // If form is valid, submit the review
-                if (isValid) {
-                    var reviewData = {
-                        localName: $('#localName').val(),
-                        rating: $('#rating').val(),
-                        reviewText: $('#reviewText').val().trim()
-                    };
-
-                    // Here you can make an AJAX call to submit the review data to the server
-                    // For demonstration, we will just append the review to the reviews list
-                    var reviewHtml = '<div class="review-item mb-3 p-3 bg-light rounded shadow-sm">' +
-                        '<h6 class="font-weight-bold">' + reviewData.localName + '</h6>' +
-                        '<div class="d-flex align-items-center mb-2">' +
-                        '<div id="starRatingDisplay" class="d-flex align-items-center">';
-
-                    for (var i = 1; i <= 5; i++) {
-                        if (i <= reviewData.rating) {
-                            reviewHtml += '<i class="fa fa-star text-primary"></i>';
-                        } else {
-                            reviewHtml += '<i class="fa fa-star text-muted"></i>';
-                        }
-                    }
-
-                    reviewHtml += '</div>' +
-                        '</div>' +
-                        '<p class="mb-0">' + reviewData.reviewText + '</p>' +
-                        '</div>';
-
-                    $('#reviewsList').prepend(reviewHtml);
-                    $('#reviewForm')[0].reset();
-                    $('#rating').val('');
-                    $('#starRating i').removeClass('text-primary').addClass('text-muted');
-                }
-            });
-
-            // Pagination click event
-            $('.pagination .page-link').click(function(e) {
-                e.preventDefault();
-                var pageNum = $(this).data('page');
-                // Here you can add code to load reviews for the selected page
-                // For demonstration, we will just log the page number
-                console.log('Load page: ' + pageNum);
-            });
-        });
-    </script>
-
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Add a Review for Nearby Places</h2>
-        <form id="reviewForm" class="bg-light p-4 shadow">
-            <!-- Campo Oculto para el Nombre del Local -->
-            <input type="hidden" id="localName" value="">
-
-            <!-- Calificación -->
-            <div class="form-group">
-                <label for="rating">Rating </label>
-                <div id="starRating" class="d-flex align-items-center">
-                    <i class="fa fa-star text-muted" data-value="1"></i>
-                    <i class="fa fa-star text-muted" data-value="2"></i>
-                    <i class="fa fa-star text-muted" data-value="3"></i>
-                    <i class="fa fa-star text-muted" data-value="4"></i>
-                    <i class="fa fa-star text-muted" data-value="5"></i>
-                </div>
-                <input type="hidden" id="rating" value="">
-                <small class="text-danger d-none" id="ratingError">Please select a rating.</small>
-            </div>
-
-            <!-- Texto de la Reseña -->
-            <div class="form-group">
-                <label for="reviewText">Review *</label>
-                <textarea id="reviewText" cols="30" rows="5" class="form-control" placeholder="Write your review"></textarea>
-                <small class="text-danger d-none" id="reviewTextError">Review text is required.</small>
-            </div>
-
-            <!-- Botón de Enviar -->
-            <div class="form-group mb-0">
-                <button type="submit" class="btn btn-primary font-weight-semi-bold py-2 px-3">Submit Review</button>
-            </div>
-        </form>
-
-        <!-- Lista de Reseñas -->
-        <div id="reviewsContainer" class="mt-5">
-            <h3 class="text-center mb-4">Reviews</h3>
-            <div id="reviewsList" class="bg-white p-4 shadow"></div>
-            <nav aria-label="Page navigation" class="mt-4">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="#" data-page="1">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
 
     <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // --- Variables Globales para Reviews ---
         const reviews = JSON.parse(localStorage.getItem('reviews')) || {}; // Cargar reseñas desde localStorage
-        const reviewsPerPage = 3;
-        let currentLocal = null;
+        const reviewsPerPage = 5; // Mostrar más reseñas por página
+        let currentLocal = null; // Local seleccionado actualmente
+        let currentPage = 1; // Página actual de reseñas
 
+        // --- Elementos del DOM ---
         const stars = document.querySelectorAll('#starRating .fa-star');
         const ratingInput = document.getElementById('rating');
-        const reviewsList = document.getElementById('reviewsList');
-        const paginationLinks = document.querySelectorAll('.pagination .page-link');
-        const reviewLinks = document.querySelectorAll('.review-link');
-        const localNameInput = document.getElementById('localName');
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewFormTitle = document.getElementById('reviewFormTitle');
+        const reviewsListContainer = document.getElementById('reviewsList'); // El div donde van las reseñas
+        const paginationContainer = document.querySelector('#reviewsListContainer .pagination'); // Contenedor de paginación (si lo agregas)
+        const reviewLinks = document.querySelectorAll('.review-link'); // Enlaces en los blog items
+        const localNameInput = document.getElementById('localName'); // Input oculto en el form
 
-        const placeNameHeading = document.createElement('h4');
-        placeNameHeading.className = 'text-center text-primary mb-4';
-        document.getElementById('reviewForm').prepend(placeNameHeading);
+        // --- Funciones ---
 
-        // Estrellas
-        stars.forEach(star => {
-            star.addEventListener('mouseover', function () {
-                highlightStars(this.getAttribute('data-value'));
-            });
-            star.addEventListener('mouseout', function () {
-                highlightStars(ratingInput.value);
-            });
-            star.addEventListener('click', function () {
-                ratingInput.value = this.getAttribute('data-value');
-                highlightStars(ratingInput.value);
-            });
-        });
-
+        // Resaltar estrellas al pasar el mouse o hacer clic
         function highlightStars(value) {
+            const ratingValue = parseInt(value, 10) || 0; // Asegura que sea número
             stars.forEach(star => {
-                if (star.getAttribute('data-value') <= value) {
+                const starValue = parseInt(star.getAttribute('data-value'), 10);
+                if (starValue <= ratingValue) {
                     star.classList.add('text-warning');
                     star.classList.remove('text-muted');
                 } else {
@@ -636,34 +342,176 @@
             });
         }
 
-        // Clic en imagen o título
-        reviewLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                currentLocal = this.getAttribute('data-local');
-                localNameInput.value = currentLocal;
-                placeNameHeading.textContent = `Review for: ${currentLocal}`;
+        // Renderizar estrellas estáticas para una reseña existente
+        function renderStaticStars(rating) {
+            const ratingValue = parseInt(rating, 10) || 0;
+            let starsHtml = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= ratingValue) {
+                    starsHtml += '<i class="fa fa-star text-warning"></i>';
+                } else {
+                    starsHtml += '<i class="fa fa-star text-muted"></i>';
+                }
+            }
+            return `<div class="mb-1">${starsHtml}</div>`; // Añadir margen inferior
+        }
 
-                document.getElementById('reviewsContainer').scrollIntoView({ behavior: 'smooth' });
+        // Renderizar la lista de reseñas para el local actual y página actual
+        function renderReviews() {
+             reviewsListContainer.innerHTML = ''; // Limpiar lista anterior
+             if (!currentLocal || !reviews[currentLocal] || reviews[currentLocal].length === 0) {
+                 reviewsListContainer.innerHTML = '<p class="text-center text-muted">Todavía no hay reseñas para este local. ¡Sé el primero!</p>';
+                 // Ocultar paginación si no hay reseñas
+                 if(paginationContainer) paginationContainer.parentElement.classList.add('d-none');
+                 return;
+             }
 
-                // Resaltar el formulario temporalmente
-                const form = document.getElementById('reviewForm');
-                form.classList.add('border', 'border-primary');
-                setTimeout(() => {
-                    form.classList.remove('border', 'border-primary');
-                }, 1500);
+            // Ordenar reseñas (opcional, ej: más nuevas primero si tuvieras timestamp)
+            const localReviews = reviews[currentLocal]; //.sort((a, b) => b.timestamp - a.timestamp); // Necesitarías guardar timestamp
 
-                renderReviews(1);
+            const totalPages = Math.ceil(localReviews.length / reviewsPerPage);
+            const start = (currentPage - 1) * reviewsPerPage;
+            const end = start + reviewsPerPage;
+            const paginatedReviews = localReviews.slice(start, end);
+
+            if (paginatedReviews.length === 0 && currentPage > 1) {
+                // Si estamos en una página vacía (ej: después de borrar), ir a la anterior
+                currentPage--;
+                renderReviews(); // Volver a renderizar
+                return;
+            }
+
+            paginatedReviews.forEach((review, index) => {
+                 const reviewItem = document.createElement('div');
+                 reviewItem.classList.add('review-item');
+                 // Escapar HTML en reviewText para seguridad básica
+                 const safeReviewText = review.reviewText.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                 reviewItem.innerHTML = `
+                     ${renderStaticStars(review.rating)}
+                     <p class="mb-0">${safeReviewText}</p>
+                     `;
+                 reviewsListContainer.appendChild(reviewItem);
+            });
+
+             // Renderizar paginación (si hay más de una página)
+             renderPagination(totalPages);
+        }
+
+         // Renderizar controles de paginación
+        function renderPagination(totalPages) {
+            if (!paginationContainer) return; // Salir si no hay contenedor de paginación
+
+            paginationContainer.innerHTML = ''; // Limpiar paginación anterior
+
+            if (totalPages <= 1) {
+                 paginationContainer.parentElement.classList.add('d-none'); // Ocultar si solo hay 1 página
+                return;
+            }
+
+            paginationContainer.parentElement.classList.remove('d-none'); // Mostrar si hay más de 1 página
+
+            // Botón Anterior
+            const prevLi = document.createElement('li');
+            prevLi.classList.add('page-item', currentPage === 1 ? 'disabled' : '');
+            prevLi.innerHTML = `<a class="page-link" href="#" data-page="${currentPage - 1}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>`;
+            if (currentPage > 1) {
+                prevLi.querySelector('a').addEventListener('click', handlePaginationClick);
+            }
+            paginationContainer.appendChild(prevLi);
+
+            // Números de Página
+            for (let i = 1; i <= totalPages; i++) {
+                const pageLi = document.createElement('li');
+                pageLi.classList.add('page-item', i === currentPage ? 'active' : '');
+                pageLi.innerHTML = `<a class="page-link" href="#" data-page="${i}">${i}</a>`;
+                pageLi.querySelector('a').addEventListener('click', handlePaginationClick);
+                paginationContainer.appendChild(pageLi);
+            }
+
+            // Botón Siguiente
+             const nextLi = document.createElement('li');
+            nextLi.classList.add('page-item', currentPage === totalPages ? 'disabled' : '');
+            nextLi.innerHTML = `<a class="page-link" href="#" data-page="${currentPage + 1}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>`;
+             if (currentPage < totalPages) {
+                nextLi.querySelector('a').addEventListener('click', handlePaginationClick);
+            }
+            paginationContainer.appendChild(nextLi);
+        }
+
+        // Manejador para clics en paginación
+        function handlePaginationClick(e) {
+            e.preventDefault();
+            const targetPage = parseInt(this.getAttribute('data-page'));
+            if (targetPage && targetPage !== currentPage) {
+                currentPage = targetPage;
+                renderReviews();
+            }
+        }
+
+        // --- Event Listeners ---
+
+        // Clic en estrellas del formulario
+        stars.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                highlightStars(this.getAttribute('data-value'));
+            });
+            star.addEventListener('mouseout', function () {
+                highlightStars(ratingInput.value); // Volver a la selección actual
+            });
+            star.addEventListener('click', function () {
+                ratingInput.value = this.getAttribute('data-value');
+                document.getElementById('ratingError').classList.add('d-none'); // Ocultar error al seleccionar
+                highlightStars(ratingInput.value);
             });
         });
 
-        // Enviar formulario
-        document.getElementById('reviewForm').addEventListener('submit', function (e) {
+        // Clic en un enlace de blog item (imagen o título)
+        reviewLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const selectedLocal = this.getAttribute('data-local');
+
+                if (selectedLocal) {
+                    currentLocal = selectedLocal;
+                    localNameInput.value = currentLocal; // Actualizar input oculto
+                    reviewFormTitle.textContent = `Tu reseña para: ${currentLocal}`; // Actualizar título del form
+                    currentPage = 1; // Resetear a la primera página de reseñas
+                    renderReviews(); // Mostrar reseñas del local seleccionado
+
+                    // Scroll suave hacia el formulario y resaltarlo
+                    const reviewsSection = document.getElementById('reviewsContainer');
+                     if (reviewsSection) {
+                        reviewsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        reviewForm.classList.add('border', 'border-primary', 'shadow-lg'); // Resaltar
+                        setTimeout(() => {
+                             reviewForm.classList.remove('border', 'border-primary', 'shadow-lg');
+                        }, 1500);
+                     }
+                     // Limpiar formulario anterior por si acaso
+                     reviewForm.reset();
+                     ratingInput.value = '';
+                     highlightStars(0);
+                     document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
+                }
+            });
+        });
+
+        // Envío del formulario de reseña
+        reviewForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
-            document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
+            // Ocultar mensajes de error previos
+            document.querySelectorAll('#reviewForm .text-danger').forEach(el => el.classList.add('d-none'));
 
             let isValid = true;
+
+            const localName = localNameInput.value.trim();
+             // Validar que se haya seleccionado un local (aunque el input está oculto, currentLocal debe tener valor)
+             if (!currentLocal || !localName) {
+                 // Podrías mostrar un error general si intentan enviar sin seleccionar local
+                 alert("Por favor, selecciona primero un local haciendo clic en su imagen o título.");
+                 isValid = false;
+             }
 
             const rating = ratingInput.value.trim();
             if (!rating) {
@@ -678,58 +526,87 @@
             }
 
             if (isValid) {
+                // Crear objeto de reseña (podrías añadir user, date, etc.)
+                const newReview = {
+                    // user: 'Usuario Anónimo', // O pedir nombre
+                    rating: rating,
+                    reviewText: reviewText
+                    // timestamp: Date.now() // Útil para ordenar
+                };
+
+                // Añadir la reseña al array del local correspondiente
                 if (!reviews[currentLocal]) {
-                    reviews[currentLocal] = [];
+                    reviews[currentLocal] = []; // Crear array si no existe
                 }
-                reviews[currentLocal].push({ rating, reviewText });
-                localStorage.setItem('reviews', JSON.stringify(reviews)); // Guardar en localStorage
-                renderReviews(1);
-                this.reset();
+                reviews[currentLocal].unshift(newReview); // Añadir al principio (más nuevas primero)
+
+                // Guardar en localStorage
+                try {
+                    localStorage.setItem('reviews', JSON.stringify(reviews));
+                } catch (error) {
+                    console.error("Error saving to localStorage:", error);
+                    // Podría ser que localStorage esté lleno
+                    alert("No se pudo guardar la reseña. Espacio de almacenamiento lleno.");
+                }
+
+
+                // Volver a renderizar las reseñas (debería mostrar la nueva)
+                currentPage = 1; // Ir a la primera página para ver la nueva reseña
+                renderReviews();
+
+                // Limpiar formulario
+                reviewForm.reset();
                 ratingInput.value = '';
-                highlightStars(0);
+                highlightStars(0); // Resetear estrellas visualmente
+                 reviewFormTitle.textContent = `¡Gracias por tu reseña para ${currentLocal}!`; // Mensaje de éxito temporal
+                 setTimeout(() => {
+                      if (currentLocal) reviewFormTitle.textContent = `Tu reseña para: ${currentLocal}`;
+                      else reviewFormTitle.textContent = `Selecciona un local para reseñar`;
+                 }, 3000);
+
+
             }
         });
 
-        // Renderizar reseñas
-        function renderReviews(page) {
-            reviewsList.innerHTML = '';
-            if (!currentLocal || !reviews[currentLocal]) {
-                reviewsList.innerHTML = '<p class="text-center">No reviews available for this place.</p>';
-                return;
-            }
 
-            const start = (page - 1) * reviewsPerPage;
-            const end = start + reviewsPerPage;
-            const sortedReviews = reviews[currentLocal].sort((a, b) => b.rating - a.rating);
+        // --- Carga Inicial ---
+         // No renderizar reseñas al inicio, esperar a que el usuario seleccione un local.
+         reviewsListContainer.innerHTML = '<p class="text-center text-muted">Haz clic en la imagen o título de un local para ver o añadir reseñas.</p>';
+         if(paginationContainer) paginationContainer.parentElement.classList.add('d-none'); // Ocultar paginación inicial
 
-            sortedReviews.slice(start, end).forEach(review => {
-                const reviewItem = document.createElement('div');
-                reviewItem.classList.add('review-item');
-                reviewItem.innerHTML = `
-                    <div class="d-flex align-items-center mb-2">
-                        <div class="text-warning">
-                            ${'<i class="fa fa-star"></i>'.repeat(review.rating)}
-                            ${'<i class="fa fa-star text-muted"></i>'.repeat(5 - review.rating)}
-                        </div>
-                    </div>
-                    <p>${review.reviewText}</p>
-                `;
-                reviewsList.appendChild(reviewItem);
+
+         // --- Cargar Footer (código que ya tenías) ---
+         fetch('footer.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(html => {
+                // Asegúrate de que exista el placeholder antes de intentar insertarlo
+                const footerPlaceholder = document.getElementById('footer-placeholder');
+                if(footerPlaceholder){
+                     footerPlaceholder.innerHTML = html;
+                    // Si necesitas re-inicializar JS del footer
+                    // if (typeof initBackToTop === 'function') { initBackToTop(); }
+                } else {
+                    console.error("Footer placeholder not found!");
+                }
+
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                const footerPlaceholder = document.getElementById('footer-placeholder');
+                if(footerPlaceholder) {
+                    footerPlaceholder.innerHTML = '<p class="text-center text-danger">Error al cargar el pie de página.</p>';
+                }
             });
-        }
 
-        // Paginación
-        paginationLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const page = parseInt(this.getAttribute('data-page'));
-                renderReviews(page);
-            });
-        });
+    }); // Fin DOMContentLoaded
+    </script>
 
-        renderReviews(1);
-    });
-</script>
+
 </body>
 
 </html>

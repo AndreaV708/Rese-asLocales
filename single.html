@@ -3,112 +3,121 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TRAVELER - Free Travel Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <title>Detalle de Local - UTAvisor</title> <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Detalle local UTA, reseña local Ambato, [Nombre Local Específico]" name="keywords"> <meta content="Información detallada, reseñas y fotos del local [Nombre Local Específico] cerca de la Universidad Técnica de Ambato." name="description"> <link href="img/favicon.ico" rel="icon"> <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+     <style>
+         /* Estilos para estrellas y reviews que tenías */
+        .fa-star {
+            cursor: pointer;
+        }
+        .fa-star.text-warning {
+            color: #ffc107 !important;
+        }
+        .fa-star.text-muted {
+            color: #e4e5e9 !important;
+        }
+        .review-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+         .review-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        #imagePreview img { /* Estilo para previsualización de imágenes */
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: cover;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: .25rem;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                        <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+
+                        <a href="contact.html" class="text-dark px-2">
+                             💬 ¿Tienes una recomendación? <strong>¡Escríbenos!</strong>
+                        </a>
+
+                       
+
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-primary pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                         <a class="text-primary px-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-primary px-3" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-primary px-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-primary px-3" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-primary pl-3" href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">TRAVEL</span>ER</h1>
+
+                 <a href="index.html" class="navbar-brand"> <h1 class="m-0 text-primary"><span class="text-dark">UTA</span>visor</h1>
+
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="package.html" class="nav-item nav-link">Tour Packages</a>
+                        <a href="index.html" class="nav-item nav-link">Bienvenidos</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre</a>
+                        <a href="package.html" class="nav-item nav-link">Lugares</a>
+
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Paginas</a>
+                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Páginas</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="faq.html" class="dropdown-item">Peguntas frecuentes</a>
-                                <a href="galerry.html" class="dropdown-item">Collague de fotos</a>
-                                <a href="privacy.html" class="dropdown-item">Términos y Condiciones</a>
+                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                 <a href="single.html" class="dropdown-item active">Detalle Local</a>
+                                <a href="destination.html" class="dropdown-item">Destinos/Categorías</a>
+                                <a href="guide.html" class="dropdown-item">Guías/Equipo</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Blog Detail</h3>
+                <h3 class="display-4 text-white text-uppercase">Detalle del Local</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                     <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Blog Detail</p>
+                     <p class="m-0 text-uppercase"><a class="text-white" href="blog.html">Blog</a></p> <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Detalle</p>
+
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Header End -->
 
 
@@ -117,169 +126,79 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <!-- Blog Detail Start -->
                     <div class="pb-3">
                         <div class="blog-item">
                             <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
+                                <img class="img-fluid w-100 rounded shadow-sm" src="img/Chamiko Food and Friends principal.jpg" alt="[Nombre del Local]">
                                 <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">01</h6>
-                                    <small class="text-white text-uppercase">Jan</small>
+                                    <i class="fa fa-utensils fa-2x text-white"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white mb-3" style="padding: 30px;">
+                        <div class="bg-white mb-3 shadow-sm rounded" style="padding: 30px;">
                             <div class="d-flex mb-3">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
-                            </div>
-                            <h2 class="mb-3">Dolor justo sea kasd lorem clita justo diam amet</h2>
-                            <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
-                                magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
-                                amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
-                                sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
-                                aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
-                                sit stet no diam kasd vero.</p>
-                            <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
-                                vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
-                                nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
-                                ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
-                                clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
-                                justo dolore sit invidunt.</p>
-                            <h4 class="mb-3">Est dolor lorem et ea</h4>
-                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/blog-2.jpg">
-                            <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                                invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                                lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                                rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                                sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                                lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                                sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
-                                dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
-                                sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
-                                duo tempor sea kasd clita ipsum et.</p>
-                            <h5 class="mb-3">Est dolor lorem et ea</h5>
-                            <img class="img-fluid w-50 float-right ml-4 mb-2" src="img/blog-3.jpg">
-                            <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                                invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                                lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                                rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                                sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                                lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                                sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
-                                dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
-                                sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
-                                duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat
-                                aliquyam et ut.</p>
-                        </div>
-                    </div>
-                    <!-- Blog Detail End -->
-    
-                    <!-- Comment List Start -->
-                    <div class="bg-white mb-5 p-4">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">User Reviews</h4>
-                        
-                        <!-- Review Item -->
-                        <div class="review-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
-                                <div class="ml-3">
-                                    <h6 class="mb-0">Emily O</h6>
-                                    <small class="text-muted">4 months ago</small>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="text-warning">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                                <small class="ml-2 text-muted">4.5/5</small>
-                            </div>
-                            <p>Great food. I had the cheese burger with added halloumi and chips, along with a mint lemonade. Service was quick and friendly!</p>
-                            <div class="d-flex">
-                                <img src="img/HamburguesaQuesp.png" alt="Review Image" class="img-fluid mr-2" style="width: 100px; height: 100px;">
-                                <img src="img/PapasFritas.png" alt="Review Image" class="img-fluid" style="width: 100px; height: 100px;">
-                            </div>
-                            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
-                        </div>
-                        
-                        <!-- Review Item -->
-                        <div class="review-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
-                                <div class="ml-3">
-                                    <h6 class="mb-0">Christopher R.</h6>
-                                    <small class="text-muted">Dec 21, 2021</small>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="text-warning">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <small class="ml-2 text-muted">5/5</small>
-                            </div>
-                            <p>As always, Peter Luger’s does NOT disappoint. Our server was fantastic and made the experience memorable. Highly recommend!</p>
-                            <div class="d-flex">
-                                <img src="img/City.png" alt="Review Image" class="img-fluid mr-2" style="width: 100px; height: 100px;">
-                            </div>
-                            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
-                        </div>
-                        
-                        <!-- Review Item -->
-                        <div class="review-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
-                                <div class="ml-3">
-                                    <h6 class="mb-0">Katherine Larrequi</h6>
-                                    <small class="text-muted">1 month ago</small>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="text-warning">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <small class="ml-2 text-muted">5/5</small>
-                            </div>
-                            <p>Food, service, and atmosphere were all of quality and elegance. Highly recommend Rocco Steakhouse for a special occasion!</p>
+                                <a class="text-primary text-uppercase text-decoration-none" href="#">Comida</a> <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="#">Cerca Campus Huachi</a> </div>
+                            <h1 class="mb-3">[Nombre del Local - Ej: Chamiko Food and Friends]</h1>
+                            <p>Aquí va la descripción detallada del local. Puedes hablar sobre el tipo de comida, el ambiente, los precios aproximados, si es bueno para grupos, si tiene WiFi, horarios, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
-                            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
+                            <h4 class="mb-3 mt-4">Galería</h4>
+                            <div class="row">
+                                <div class="col-4 mb-3">
+                                     <img class="img-fluid rounded" src="img/local_detalle_1.jpg" alt="Detalle 1">
+                                </div>
+                                <div class="col-4 mb-3">
+                                     <img class="img-fluid rounded" src="img/local_detalle_2.jpg" alt="Detalle 2">
+                                </div>
+                                <div class="col-4 mb-3">
+                                     <img class="img-fluid rounded" src="img/local_detalle_3.jpg" alt="Detalle 3">
+                                </div>
+                            </div>
+
+                             <h4 class="mb-3 mt-4">Ubicación</h4>
+                             <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817391672894!2d-78.6292!3d-1.2800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDE2JzQ4LjAiUyA3OMKwMzcnNDUuMSJX!5e0!3m2!1ses!2sec!4v1620000000000!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                             </div>
+
                         </div>
                     </div>
-                    <!-- Comment List End -->
-    
-                    <!-- Comment Form Start -->
-                    <div class="bg-white mb-3" style="padding: 30px;">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a Review</h4>
-                        <form id="reviewForm">
+                    <div class="bg-white mb-5 p-4 shadow-sm rounded">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Reseñas de Estudiantes (<span id="reviewCount">0</span>)</h4>
+                         <div id="reviewsListContainer">
+                            <div class="review-item mb-4">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="img/user.jpg" alt="Usuario" class="rounded-circle" style="width: 50px; height: 50px;">
+                                    <div class="ml-3">
+                                        <h6 class="mb-0">Nombre Estudiante</h6>
+                                        <small class="text-muted">Hace 2 semanas</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="text-warning">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+                                    </div>
+                                    <small class="ml-2 text-muted">4.5/5</small>
+                                </div>
+                                <p>¡Excelente lugar para almorzar! Buena porción y precio justo para estudiantes. Recomendado.</p>
+                                </div>
+                             <div class="review-item mb-4">
+                                </div>
+                         </div>
+                    </div>
+                    <div class="bg-white mb-3 p-4 shadow-sm rounded">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Deja tu Reseña para [Nombre Local]</h4> <form id="reviewForm"> <div class="form-group">
+                                 <label for="name">Nombre <span class="text-danger">*</span></label>
+                                 <input type="text" class="form-control" id="name" required>
+                                 <small class="text-danger d-none" id="nameError">El nombre es obligatorio.</small>
+                             </div>
+                             <div class="form-group">
+                                 <label for="email">Correo (No se publicará) <span class="text-danger">*</span></label>
+                                 <input type="email" class="form-control" id="email" required>
+                                 <small class="text-danger d-none" id="emailError">Correo inválido u obligatorio.</small>
+                             </div>
                             <div class="form-group">
-                                <label for="title">Review Title *</label>
-                                <input type="text" class="form-control" id="title" placeholder="Enter a title for your review">
-                                <small class="text-danger d-none" id="titleError">Title is required.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Name </label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                                <small class="text-danger d-none" id="nameError">Name is required.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email </label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                <small class="text-danger d-none" id="emailError">Valid email is required.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="rating">Rating *</label>
+                                <label for="rating">Calificación <span class="text-danger">*</span></label>
                                 <div id="starRating" class="d-flex align-items-center">
                                     <i class="fa fa-star text-muted" data-value="1"></i>
                                     <i class="fa fa-star text-muted" data-value="2"></i>
@@ -287,221 +206,109 @@
                                     <i class="fa fa-star text-muted" data-value="4"></i>
                                     <i class="fa fa-star text-muted" data-value="5"></i>
                                 </div>
-                                <input type="hidden" id="rating" value="">
-                                <small class="text-danger d-none" id="ratingError">Please select a rating.</small>
+                                <input type="hidden" id="rating" value="" required> <small class="text-danger d-none" id="ratingError">Por favor selecciona una calificación.</small>
                             </div>
                             <div class="form-group">
-                                <label for="message">Review *</label>
-                                <textarea id="message" cols="30" rows="5" class="form-control" placeholder="Enter your review"></textarea>
-                                <small class="text-danger d-none" id="messageError">Review is required.</small>
+                                 <label for="title">Título de tu reseña <span class="text-danger">*</span></label>
+                                 <input type="text" class="form-control" id="title" required>
+                                 <small class="text-danger d-none" id="titleError">El título es obligatorio.</small>
                             </div>
                             <div class="form-group">
-                                <label for="images">Upload Images (Optional)</label>
-                                <input type="file" class="form-control" id="images" multiple accept="image/*">
-                                <div id="imagePreview" class="d-flex mt-2"></div>
+                                <label for="message">Tu Reseña <span class="text-danger">*</span></label>
+                                <textarea id="message" cols="30" rows="5" class="form-control" required></textarea>
+                                <small class="text-danger d-none" id="messageError">La reseña es obligatoria.</small>
                             </div>
+                            <div class="form-group">
+                                 <label for="images">Subir Imágenes (Opcional)</label>
+                                 <input type="file" class="form-control-file" id="images" multiple accept="image/*">
+                                 <div id="imagePreview" class="d-flex flex-wrap mt-2"></div> </div>
                             <div class="form-group mb-0">
-                                <button type="submit" class="btn btn-primary font-weight-semi-bold py-2 px-3">Submit Review</button>
+                                <button type="submit" class="btn btn-primary font-weight-semi-bold py-2 px-3">Enviar Reseña</button>
                             </div>
                         </form>
+                         <div id="reviewSubmitStatus" class="mt-3"></div> </div>
                     </div>
-                    <!-- Comment Form End -->
-                </div>
-    
+
                 <div class="col-lg-4 mt-5 mt-lg-0">
-                    <!-- Author Bio -->
-                    <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
-                        <img src="img/user.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
-                        <h3 class="text-primary mb-3">John Doe</h3>
-                        <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="text-primary px-2" href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="text-primary px-2" href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="text-primary px-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="text-primary px-2" href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="text-primary px-2" href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
+                    <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4 shadow-sm rounded">
+                         <img src="img/user.jpg" class="img-fluid mx-auto mb-3 rounded-circle" style="width: 100px;"> <h3 class="text-primary mb-3">[Nombre Autor Post/Admin]</h3> <p>Breve descripción del autor o de UTAvisor. Promoviendo la información útil para estudiantes.</p>
+                         <div class="d-flex justify-content-center">
+                            <a class="text-primary px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="text-primary px-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="text-primary px-2" href="#"><i class="fab fa-instagram"></i></a>
+                         </div>
                     </div>
-    
-                    <!-- Search Form -->
+
                     <div class="mb-5">
-                        <div class="bg-white" style="padding: 30px;">
+                         <div class="bg-white shadow-sm rounded p-4">
                             <div class="input-group">
-                                <input type="text" class="form-control p-4" placeholder="Keyword">
+                                <input type="text" class="form-control p-4" placeholder="Buscar en el blog...">
                                 <div class="input-group-append">
-                                    <span class="input-group-text bg-primary border-primary text-white"><i
-                                            class="fa fa-search"></i></span>
+                                    <span class="input-group-text bg-primary border-primary text-white"><i class="fa fa-search"></i></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Category List -->
                     <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categories</h4>
-                        <div class="bg-white" style="padding: 30px;">
-                            <ul class="list-inline m-0">
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Web
-                                        Design</a>
-                                    <span class="badge badge-primary badge-pill">150</span>
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categorías</h4>
+                        <div class="bg-white shadow-sm rounded p-4">
+                             <ul class="list-inline m-0">
+                                <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="package.html#comida"><i class="fa fa-angle-right text-primary mr-2"></i>Comida</a>
+                                    <span class="badge badge-primary badge-pill">15</span>
                                 </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Web
-                                        Development</a>
-                                    <span class="badge badge-primary badge-pill">131</span>
+                                 <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="package.html#servicios"><i class="fa fa-angle-right text-primary mr-2"></i>Servicios</a>
+                                    <span class="badge badge-primary badge-pill">10</span>
                                 </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Online Marketing</a>
-                                    <span class="badge badge-primary badge-pill">78</span>
+                                  <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center rounded">
+                                    <a class="text-dark" href="package.html#estudio"><i class="fa fa-angle-right text-primary mr-2"></i>Estudio</a>
+                                    <span class="badge badge-primary badge-pill">8</span>
                                 </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Keyword Research</a>
-                                    <span class="badge badge-primary badge-pill">56</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Email Marketing</a>
-                                    <span class="badge badge-primary badge-pill">98</span>
-                                </li>
-                            </ul>
+                                </ul>
                         </div>
                     </div>
-    
-                    <!-- Recent Post -->
+
                     <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h4>
-                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Últimas Reseñas</h4>
+                         <div class="bg-white shadow-sm rounded p-4">
+                            <a href="single.html#otro_local_1" class="d-flex align-items-center text-decoration-none bg-light mb-3 p-2 rounded">
+                                <img class="img-fluid rounded" src="img/local_thumb_1.jpg" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                                <div class="pl-3">
+                                    <h6 class="m-1">Excelente café en [Otro Local]</h6>
+                                    <small>Hace 1 día</small>
+                                </div>
+                            </a>
+                             <a href="single.html#otro_local_2" class="d-flex align-items-center text-decoration-none bg-light mb-3 p-2 rounded">
+                                 <img class="img-fluid rounded" src="img/local_thumb_2.jpg" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                                <div class="pl-3">
+                                    <h6 class="m-1">Copias rápidas y baratas en [Copiadora X]</h6>
+                                    <small>Hace 3 días</small>
+                                </div>
+                            </a>
+                             </div>
                     </div>
-    
-                    <!-- Tag Cloud -->
+
                     <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag Cloud</h4>
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Etiquetas</h4>
                         <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-light m-1">Design</a>
-                            <a href="" class="btn btn-light m-1">Development</a>
-                            <a href="" class="btn btn-light m-1">Marketing</a>
-                            <a href="" class="btn btn-light m-1">SEO</a>
-                            <a href="" class="btn btn-light m-1">Writing</a>
-                            <a href="" class="btn btn-light m-1">Consulting</a>
+                             <a href="" class="btn btn-light m-1">Barato</a>
+                            <a href="" class="btn btn-light m-1">WiFi</a>
+                            <a href="" class="btn btn-light m-1">Tranquilo</a>
+                            <a href="" class="btn btn-light m-1">Grupos</a>
+                            <a href="" class="btn btn-light m-1">Rápido</a>
+                            <a href="" class="btn btn-light m-1">Vegetariano</a>
+                            <a href="" class="btn btn-light m-1">Huachi</a>
+                            <a href="" class="btn btn-light m-1">Ingahuacho</a>
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
     </div>
-    <!-- Blog End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
-                </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="footer-placeholder">
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -510,289 +317,150 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <script>
-        document.getElementById('commentForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Clear previous errors
-            document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
-
-            let isValid = true;
-
-            // Validate Name
-            const name = document.getElementById('name').value.trim();
-            if (!name) {
-                document.getElementById('nameError').classList.remove('d-none');
-                isValid = false;
-            }
-
-            // Validate Email
-            const email = document.getElementById('email').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email || !emailRegex.test(email)) {
-                document.getElementById('emailError').classList.remove('d-none');
-                isValid = false;
-            }
-
-            // Validate Rating
-            const rating = document.getElementById('rating').value.trim();
-            if (!rating || rating < 1 || rating > 5) {
-                document.getElementById('ratingError').classList.remove('d-none');
-                isValid = false;
-            }
-
-            // Validate Message
-            const message = document.getElementById('message').value.trim();
-            if (!message) {
-                document.getElementById('messageError').classList.remove('d-none');
-                isValid = false;
-            }
-
-            // If valid, submit the form (you can replace this with an AJAX request)
-            if (isValid) {
-                alert('Form submitted successfully!');
-                // Optionally, reset the form
-                document.getElementById('commentForm').reset();
-            }
-        });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const stars = document.querySelectorAll('#starRating .fa-star');
-            const ratingInput = document.getElementById('rating');
-
-            // Handle star hover and click events
-            stars.forEach(star => {
-                star.addEventListener('mouseover', function () {
-                    const value = this.getAttribute('data-value');
-                    highlightStars(value);
-                });
-
-                star.addEventListener('mouseout', function () {
-                    highlightStars(ratingInput.value);
-                });
-
-                star.addEventListener('click', function () {
-                    const value = this.getAttribute('data-value');
-                    ratingInput.value = value;
-                    highlightStars(value);
-                });
-            });
-
-            function highlightStars(value) {
-                stars.forEach(star => {
-                    if (star.getAttribute('data-value') <= value) {
-                        star.classList.add('text-warning');
-                        star.classList.remove('text-muted');
-                    } else {
-                        star.classList.add('text-muted');
-                        star.classList.remove('text-warning');
-                    }
-                });
-            }
-
-            // Form validation
-            document.getElementById('reviewForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                // Clear previous errors
-                document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
-
-                let isValid = true;
-
-                // Validate Title
-                const title = document.getElementById('title').value.trim();
-                if (!title) {
-                    document.getElementById('titleError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Name
-                const name = document.getElementById('name').value.trim();
-                if (!name) {
-                    document.getElementById('nameError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Email
-                const email = document.getElementById('email').value.trim();
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!email || !emailRegex.test(email)) {
-                    document.getElementById('emailError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Rating
-                const rating = ratingInput.value.trim();
-                if (!rating) {
-                    document.getElementById('ratingError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Message
-                const message = document.getElementById('message').value.trim();
-                if (!message) {
-                    document.getElementById('messageError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // If valid, submit the form (you can replace this with an AJAX request)
-                if (isValid) {
-                    alert('Review submitted successfully!');
-                    document.getElementById('reviewForm').reset();
-                    highlightStars(0); // Reset stars
-                }
-            });
-        });
-    </script>
-
-    <!-- Reseñas Existentes -->
-    <div class="bg-white mb-5 p-4">
-        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">User Reviews</h4>
-        <div class="review-item mb-4">
-            <div class="d-flex align-items-center mb-2">
-                <img src="img/user.jpg" alt="User" class="rounded-circle" style="width: 50px; height: 50px;">
-                <div class="ml-3">
-                    <h6 class="mb-0">Emily O</h6>
-                    <small class="text-muted">4 months ago</small>
-                </div>
-            </div>
-            <div class="d-flex align-items-center mb-2">
-                <div class="text-warning">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-alt"></i>
-                </div>
-                <small class="ml-2 text-muted">4.5/5</small>
-            </div>
-            <p>Great food. I had the cheese burger with added halloumi and chips, along with a mint lemonade. Service was quick and friendly!</p>
-            <div class="d-flex">
-                <img src="img/review-1.jpg" alt="Review Image" class="img-fluid mr-2" style="width: 100px; height: 100px;">
-                <img src="img/review-2.jpg" alt="Review Image" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <button class="btn btn-sm btn-outline-primary mt-3">Reply</button>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
             const stars = document.querySelectorAll('#starRating .fa-star');
             const ratingInput = document.getElementById('rating');
             const imageInput = document.getElementById('images');
             const imagePreview = document.getElementById('imagePreview');
+            const reviewForm = document.getElementById('reviewForm'); // Cambiado de commentForm
 
-            // Handle star hover and click events
-            stars.forEach(star => {
-                star.addEventListener('mouseover', function () {
-                    const value = this.getAttribute('data-value');
-                    highlightStars(value);
-                });
+             // --- Lógica de Estrellas ---
+             function highlightStars(value) {
+                 const ratingValue = parseInt(value, 10) || 0;
+                 stars.forEach(star => {
+                     const starValue = parseInt(star.getAttribute('data-value'), 10);
+                     if (starValue <= ratingValue) {
+                         star.classList.add('text-warning');
+                         star.classList.remove('text-muted');
+                     } else {
+                         star.classList.add('text-muted');
+                         star.classList.remove('text-warning');
+                     }
+                 });
+             }
 
-                star.addEventListener('mouseout', function () {
-                    highlightStars(ratingInput.value);
-                });
+             stars.forEach(star => {
+                 star.addEventListener('mouseover', function () { highlightStars(this.getAttribute('data-value')); });
+                 star.addEventListener('mouseout', function () { highlightStars(ratingInput.value); });
+                 star.addEventListener('click', function () {
+                     ratingInput.value = this.getAttribute('data-value');
+                     highlightStars(ratingInput.value);
+                      // Ocultar error de rating al hacer clic
+                     const ratingError = document.getElementById('ratingError');
+                     if(ratingError) ratingError.classList.add('d-none');
+                 });
+             });
 
-                star.addEventListener('click', function () {
-                    const value = this.getAttribute('data-value');
-                    ratingInput.value = value;
-                    highlightStars(value);
-                });
-            });
-
-            function highlightStars(value) {
-                stars.forEach(star => {
-                    if (star.getAttribute('data-value') <= value) {
-                        star.classList.add('text-warning');
-                        star.classList.remove('text-muted');
-                    } else {
-                        star.classList.add('text-muted');
-                        star.classList.remove('text-warning');
+            // --- Lógica de Previsualización de Imágenes ---
+            if (imageInput && imagePreview) {
+                imageInput.addEventListener('change', function () {
+                    imagePreview.innerHTML = ''; // Limpiar previsualización anterior
+                    if (this.files) {
+                         Array.from(this.files).forEach(file => {
+                             if (file.type.startsWith('image/')){ // Validar que sea imagen
+                                 const reader = new FileReader();
+                                 reader.onload = function (e) {
+                                     const img = document.createElement('img');
+                                     img.src = e.target.result;
+                                     // Aplicar estilos directamente aquí o con CSS
+                                     img.style.maxWidth = '100px';
+                                     img.style.maxHeight = '100px';
+                                     img.style.margin = '5px';
+                                     img.style.objectFit = 'cover';
+                                     img.style.border = '1px solid #ddd';
+                                     img.style.borderRadius = '.25rem';
+                                     imagePreview.appendChild(img);
+                                 }
+                                 reader.readAsDataURL(file);
+                             }
+                         });
                     }
                 });
             }
 
-            // Image preview
-            imageInput.addEventListener('change', function () {
-                imagePreview.innerHTML = '';
-                Array.from(this.files).forEach(file => {
-                    const reader = new FileReader();
-                    reader.onload = function (e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.classList.add('img-fluid', 'mr-2');
-                        img.style.width = '100px';
-                        img.style.height = '100px';
-                        imagePreview.appendChild(img);
-                    };
-                    reader.readAsDataURL(file);
+            // --- Lógica de Validación y Envío del Formulario ---
+             if(reviewForm) {
+                 reviewForm.addEventListener('submit', function (e) {
+                     e.preventDefault();
+                     console.log("Form submission attempt..."); // Debug
+
+                     // Ocultar errores previos
+                     document.querySelectorAll('#reviewForm .text-danger').forEach(el => el.classList.add('d-none'));
+                     const statusDiv = document.getElementById('reviewSubmitStatus');
+                     if(statusDiv) statusDiv.innerHTML = ''; // Limpiar status
+
+                     let isValid = true;
+
+                      // Campos a validar
+                      const fieldsToValidate = [
+                          { id: 'name', errorId: 'nameError', msg: 'El nombre es obligatorio.' },
+                          { id: 'email', errorId: 'emailError', msg: 'Correo inválido u obligatorio.', isEmail: true },
+                          { id: 'rating', errorId: 'ratingError', msg: 'Por favor selecciona una calificación.', isRating: true },
+                          { id: 'title', errorId: 'titleError', msg: 'El título es obligatorio.' },
+                          { id: 'message', errorId: 'messageError', msg: 'La reseña es obligatoria.' }
+                      ];
+
+                     fieldsToValidate.forEach(field => {
+                         const inputElement = document.getElementById(field.id);
+                         const errorElement = document.getElementById(field.errorId);
+                         let value = inputElement ? inputElement.value.trim() : '';
+                         let fieldIsValid = true;
+
+                         if (!value || (field.isRating && (value < 1 || value > 5)) || (field.isEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) ) {
+                            fieldIsValid = false;
+                         }
+
+                         if (!fieldIsValid) {
+                            console.log(`Validation failed for ${field.id}`); // Debug
+                            if (errorElement) {
+                                 errorElement.textContent = field.msg; // Opcional: Actualizar mensaje si es dinámico
+                                 errorElement.classList.remove('d-none');
+                            }
+                            isValid = false;
+                         }
+                     });
+
+
+                     if (isValid) {
+                         console.log("Form is valid. Submitting..."); // Debug
+                         // Aquí iría tu lógica para enviar los datos (AJAX/Fetch)
+                         // Por ahora, solo mostramos un mensaje
+                         if(statusDiv) statusDiv.innerHTML = '<div class="alert alert-success">¡Reseña enviada con éxito! (Simulación)</div>';
+                         reviewForm.reset();
+                         if(imagePreview) imagePreview.innerHTML = ''; // Limpiar preview
+                         highlightStars(0); // Resetear estrellas visuales
+                     } else {
+                          console.log("Form is invalid."); // Debug
+                          if(statusDiv) statusDiv.innerHTML = '<div class="alert alert-danger">Por favor corrige los errores marcados.</div>';
+                     }
+                 });
+             } else {
+                  console.error("Review form not found!");
+             }
+
+
+            // --- Cargar Footer ---
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) { throw new Error('Network response was not ok ' + response.statusText); }
+                    return response.text();
+                })
+                .then(html => {
+                    const footerPlaceholder = document.getElementById('footer-placeholder');
+                    if(footerPlaceholder) { footerPlaceholder.innerHTML = html; }
+                    else { console.error("Footer placeholder not found!"); }
+                })
+                .catch(error => {
+                    console.error('Error loading footer:', error);
+                    const footerPlaceholder = document.getElementById('footer-placeholder');
+                    if(footerPlaceholder) { footerPlaceholder.innerHTML = '<p class="text-center text-danger">Error al cargar el pie de página.</p>';}
                 });
-            });
 
-            // Form validation
-            document.getElementById('reviewForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                // Clear previous errors
-                document.querySelectorAll('.text-danger').forEach(el => el.classList.add('d-none'));
-
-                let isValid = true;
-
-                // Validate Title
-                const title = document.getElementById('title').value.trim();
-                if (!title) {
-                    document.getElementById('titleError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Name
-                const name = document.getElementById('name').value.trim();
-                if (!name) {
-                    document.getElementById('nameError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Email
-                const email = document.getElementById('email').value.trim();
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!email || !emailRegex.test(email)) {
-                    document.getElementById('emailError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Rating
-                const rating = ratingInput.value.trim();
-                if (!rating) {
-                    document.getElementById('ratingError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // Validate Message
-                const message = document.getElementById('message').value.trim();
-                if (!message) {
-                    document.getElementById('messageError').classList.remove('d-none');
-                    isValid = false;
-                }
-
-                // If valid, submit the form
-                if (isValid) {
-                    alert('Review submitted successfully!');
-                    document.getElementById('reviewForm').reset();
-                    imagePreview.innerHTML = '';
-                    highlightStars(0); // Reset stars
-                }
-            });
-        });
+        }); // Fin DOMContentLoaded
     </script>
-</body>
 
+</body>
 </html>
