@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
-    <title>TRAVELER - Free Travel Website Template</title>
+    <title>VIAJERO - Plantilla Gratuita para Sitios Web de Viajes</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Plantillas HTML Gratuitas" name="keywords">
+    <meta content="Plantillas HTML Gratuitas" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
+    <!-- Barra Superior Inicio -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
@@ -40,30 +40,19 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-primary pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <a class="text-primary px-3" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-primary px-3" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="text-primary px-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-primary px-3" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="text-primary pl-3" href=""><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
+    <!-- Barra Superior Fin -->
 
-
-    <!-- Navbar Start -->
+    <!-- Barra de Navegación Inicio -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
@@ -76,303 +65,332 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Bienvenidos</a>
-                        <a href="about.html" class="nav-item nav-link">Sobre</a>
-                        <a href="service.html" class="nav-item nav-link">Cosas que hacer</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
                         <a href="package.html" class="nav-item nav-link">Lugares</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Paginas</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="faq.html" class="dropdown-item">Peguntas frecuentes</a>
-                                <a href="galerry.html" class="dropdown-item">Collague de fotos</a>
-                                <a href="privacy.html" class="dropdown-item">Términos y Condiciones</a>
-                            </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->
+    <!-- Barra de Navegación Fin -->
 
-
-    <!-- Header Start -->
+    <!-- Encabezado Inicio -->
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Packages</h3>
+                <h3 class="display-4 text-white text-uppercase">Lugares</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Packages</p>
+                    <p class="m-0 text-uppercase">Paquetes Turísticos</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
-    <!-- Packages Start -->
+    <!-- Encabezado Fin -->
+
+    <!-- Filtros y Resultados -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
-                <h1>Explora y filtra locales</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Lugares</h6>
+                <h1>Sitios Turísticos en Ecuador</h1>
             </div>
 
-            <div class="text-center mb-4">
-                <input type="text" id="searchInput" placeholder="Buscar local..." class="form-control mb-2" style="max-width: 300px; margin: auto;">
-                <select id="categoryFilter" class="custom-select" style="max-width: 300px; margin: auto;">
-                    <option value="">Todas las categorías</option>
-                    <option value="comida">Restaurantes</option>
-                    <option value="copias">Discotecas</option>
-                    <option value="papeleria">Piscinas</option>
-                    <option value="Parques">Parques</option>
-                    <option value="Librerías">Librerías</option>
-                </select>
-            </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-2.jpg" alt="">
+            <!-- Contenedor de tarjetas -->
+            <div class="row" id="placesContainer">
+                <!-- 1. Ayampe (Costa) -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="playas">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Ayampe.jpg" alt="Ayampe">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Ayampe, Manabí</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.7</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
+                            <h5 class="text-dark">Ayampe</h5>
+                            <p class="text-muted">Playa tranquila ideal para relajarse y practicar surf.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Gratuita</h6>
+                                <a href="https://www.google.com/maps/place/Ayampe/@-1.679507,-80.803711,3315m/data=!3m2!1e3!4b1!4m6!3m5!1s0x902c2824171f4831:0xcdc45714122e0efc!8m2!3d-1.679507!4d-80.803711!16s%2Fg%2F1tghf64m!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-3.jpg" alt="">
+
+                <!-- 2. Quilotoa (Sierra) -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="montañas">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/LaguanaQuilotao.jpg" alt="Quilotoa">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Quilotoa, Cotopaxi</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
+                            <h5 class="text-dark">Laguna de Quilotoa</h5>
+                            <p class="text-muted">Cráter volcánico con una impresionante laguna color esmeralda.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada $2</h6>
+                                <a href="    https://www.google.com/maps/place/Laguna+de+Quilotoa/data=!4m2!3m1!1s0x91d4ecf2f2a74419:0x92c280f1f5d7614c?sa=X&ved=1t:155783&ictx=111</div>
+                                " target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-4.jpg" alt="">
+
+                <!-- 3. Puyo (Amazonía) -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="parques">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/PaseoSelva.jpg" alt="Puyo">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Puyo, Pastaza</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.6</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
+                            <h5 class="text-dark">Paseo por la Selva</h5>
+                            <p class="text-muted">Adéntrate en la selva y conoce comunidades indígenas y cascadas.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Tour desde $20</h6>
+                                <a href="https://www.google.com/maps/place/Puyo/@-1.4870382,-77.9987625,6631m/data=!3m2!1e3!4b1!4m6!3m5!1s0x91d3e0a0cec83d13:0x106de38489136d76!8m2!3d-1.4928811!4d-77.9998034!16zL20vMDM1aDhk!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-5.jpg" alt="">
+
+                <!-- 4. Galápagos -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="aventura">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/IslasGalapagos.jpg" alt="Galápagos">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Islas Galápagos</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>5.0</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
+                            <h5 class="text-dark">Archipiélago Galápagos</h5>
+                            <p class="text-muted">Biodiversidad única, ideal para buceo y exploración natural.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Ingreso con Tarifa</h6>
+                                <a href="https://goo.gl/maps/WZm17XeZphhBZWd98" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-6.jpg" alt="">
+        
+                <!-- 5. La Mariscal -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="vida-nocturna">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/LaMariscal.jpg" alt="La Mariscal">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Quito, Ecuador</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.3</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
+                            <h5 class="text-dark">La Mariscal</h5>
+                            <p class="text-muted">Zona de bares, restaurantes y discotecas en el corazón de Quito.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Variable</h6>
+                                <a href="https://www.google.com/maps/place/galapagos/data=!4m2!3m1!1s0x9021d9b43bec07cd:0xfb3e68fef05dae23?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        
+                <!-- 6. Salinas -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="playas">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Salinas.jpg" alt="Salinas">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Salinas, Santa Elena</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.5</small>
+                            </div>
+                            <h5 class="text-dark">Salinas</h5>
+                            <p class="text-muted">Balneario con gran desarrollo turístico. Ideal para familias.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Gratuita</h6>
+                                <a href="https://www.google.com/maps/place/Salinas/data=!4m2!3m1!1s0x902e0e3633717003:0xbdb03525bc936c45?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 7. Cuenca -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="cultura">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/CentroHistoricoCuenca.jpg" alt="Cuenca">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cuenca, Azuay</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.8</small>
+                            </div>
+                            <h5 class="text-dark">Centro Histórico de Cuenca</h5>
+                            <p class="text-muted">Ciudad colonial declarada Patrimonio de la Humanidad.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada Libre</h6>
+                                <a href="https://www.google.com/maps/place/Centro+Hist%C3%B3rico+de+Cuenca/data=!4m2!3m1!1s0x91cd181a05a1bad7:0x8e89131a3d24ec2b?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 8. Yasuní -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="parques">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/ParqueNacionalYasuni.jpg" alt="Yasuní">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Yasuní, Orellana</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>5.0</small>
+                            </div>
+                            <h5 class="text-dark">Parque Nacional Yasuní</h5>
+                            <p class="text-muted">Reserva de biosfera con una de las mayores biodiversidades del planeta.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Desde $30</h6>
+                                <a href="https://www.google.com/maps/place/Parque+Nacional+Yasun%C3%AD/data=!4m2!3m1!1s0x91d9926c016b72b7:0x7a5c3261400b69a1?sa=X&ved=1t:155783&ictx=111https://www.google.com/maps/place/Parque+Nacional+Yasun%C3%AD/data=!4m2!3m1!1s0x91d9926c016b72b7:0x7a5c3261400b69a1?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 9. Centro Charles Darwin -->
+                <div class="col-lg-4 col-md-6 mb-4 place-card" data-category="museos">
+                    <div class="package-item bg-white shadow-sm rounded mb-2">
+                        <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Centro Charles Darwin.jpg" alt="Centro Darwin">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Santa Cruz, Galápagos</small>
+                                <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+                            </div>
+                            <h5 class="text-dark">Centro Charles Darwin</h5>
+                            <p class="text-muted">Centro de conservación y educación científica.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h6 class="text-primary">Entrada $10</h6>
+                                <a href="https://www.google.com/maps/search/centro+charles+darwin+galapagos/@-0.8033489,-90.1098633,106118m/data=!3m1!1e3!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 10. Playas de Esmeraldas (Costa) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="ciudades">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Playas de Esmeraldas.jpg" alt="Esmeraldas">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Esmeraldas</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.2</small>
+        </div>
+        <h5 class="text-dark">Playas de Esmeraldas</h5>
+        <p class="text-muted">Costas vírgenes, cultura afroecuatoriana y gastronomía del mar.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Gratuita</h6>
+            <a href="https://www.google.com/maps/place/Esmeraldas/@1.0517954,-79.7638506,53281m/data=!3m1!1e3!4m6!3m5!1s0x8fd4beb08afdae79:0x58e2517154076f6!8m2!3d0.9705806!4d-79.653001!16zL20vMDZibmw2!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
         </div>
     </div>
-    <!-- Packages End -->
+</div>
+</div>
 
-
-    <!-- Destination Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-                <h1>Explore Top Destination</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United States</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Australia</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-4.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">India</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-5.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">South Africa</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-6.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<!-- 11. Volcán Chimborazo (Sierra) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="montañas">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Volcán Chimborazo.jpg" alt="Chimborazo">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Chimborazo</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+        </div>
+        <h5 class="text-dark">Volcán Chimborazo</h5>
+        <p class="text-muted">El punto más cercano al sol desde el centro de la Tierra. Atractivo para andinismo.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Gratuita</h6>
+            <a href="https://www.google.com/maps/place/Volc%C3%A1n+Chimborazo/data=!4m2!3m1!1s0x91d372d7706a480b:0x69d5c66d2e629dff?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
         </div>
     </div>
-    <!-- Destination Start -->
+</div>
+</div>
 
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
-                </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- 12. Rafting en Tena (Amazonía) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="aventura">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Rafting en Tena.jpg" alt="Rafting en Tena">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tena, Napo</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.7</small>
+        </div>
+        <h5 class="text-dark">Rafting en Tena</h5>
+        <p class="text-muted">Ríos cristalinos ideales para deportes extremos como rafting y kayak.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Desde $25</h6>
+            <a href="https://www.google.com/maps/search/Rafting+en+Tena/@-1.3325215,-78.954895,8z?entry=s&sa=X" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
+</div>
+</div>
+
+<!-- 13. Tortuga Bay (Galápagos) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="parques">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Tortuga Bay.jpg" alt="Tortuga Bay">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Santa Cruz, Galápagos</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+        </div>
+        <h5 class="text-dark">Tortuga Bay</h5>
+        <p class="text-muted">Playa protegida con aguas cristalinas, ideal para nadar y observar iguanas marinas.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Gratuita</h6>
+            <a href="https://www.google.com/search?q=Tortuga+Bay&oq=Tortuga+Bay&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIYCAEQLhgUGK8BGMcBGIcCGIAEGJgFGJkFMgoIAhAuGLEDGIAEMg0IAxAuGK8BGMcBGIAEMgcIBBAAGIAEMg0IBRAuGK8BGMcBGIAEMhMIBhAuGK8BGMcBGIAEGJgFGJkFMgcIBxAAGIAEMhMICBAuGK8BGMcBGIAEGJgFGJkF0gEHMzM1ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+</div>
+
+<!-- 14. Mercado de Otavalo (Sierra) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="cultura">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Mercado de Otavalo.jpg" alt="Otavalo">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Otavalo, Imbabura</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.6</small>
+        </div>
+        <h5 class="text-dark">Mercado de Otavalo</h5>
+        <p class="text-muted">Uno de los mercados indígenas más grandes de Sudamérica. Textiles, cultura y artesanía.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Entrada Libre</h6>
+            <a href="https://www.google.com/maps/search/Mercado+de+Otavalo/@0.2254938,-78.2689533,3316m/data=!3m1!1e3!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 15. Kicker Rock (Galápagos) -->
+<div class="col-lg-4 col-md-6 mb-4 place-card" data-category="aventura">
+<div class="package-item bg-white shadow-sm rounded mb-2">
+    <img class="img-fluid rounded-top" src="img/LugaresTuristicos/Kicker Rock.jpg" alt="Kicker Rock">
+    <div class="p-4">
+        <div class="d-flex justify-content-between mb-3">
+            <small class="text-muted"><i class="fa fa-map-marker-alt text-primary mr-2"></i>San Cristóbal, Galápagos</small>
+            <small class="text-muted"><i class="fa fa-star text-primary mr-2"></i>4.9</small>
+        </div>
+        <h5 class="text-dark">Kicker Rock</h5>
+        <p class="text-muted">Formación rocosa icónica para buceo con tiburones martillo y vida marina única.</p>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h6 class="text-primary">Tour desde $80</h6>
+            <a href="https://www.google.com/maps/place/L%C3%A9on+Dormido/@-0.8382631,-90.0792774,732406m/data=!3m1!1e3!4m6!3m5!1s0x9000e51a2a6e27b9:0x8a5dd51f37fcd815!8m2!3d-0.7767284!4d-89.5199753!16s%2Fg%2F1pxyk2j2l!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="btn btn-sm btn-primary">Ubicación</a>
+        </div>
+    </div>
+</div>
+</div>
 
 
-    <!-- Back to Top -->
+
+    <!-- Botón Volver Arriba -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -383,12 +401,16 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Filtro funcional por texto y categoría -->
+
+    
 </body>
 
 </html>
+
+
+
+
