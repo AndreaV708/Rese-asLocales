@@ -66,9 +66,9 @@ cd Rese-asLocales
 ### 2. Inicializar Git Flow
 git flow init
 
-# Elegir ramas por defecto:
-# - master: main
-# - develop: develop
+Elegir ramas por defecto:
+ master: main
+develop: develop
 
 ### 3. Crear una nueva rama de funcionalidad (feature)
 git flow feature start nombre-de-la-funcionalidad
