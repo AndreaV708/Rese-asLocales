@@ -53,3 +53,57 @@ Este proyecto consiste en una página web colaborativa donde se muestran reseña
 │ └── (imágenes del sitio)
 │
 └── README.md
+└── CONTRIBUTING.md
+
+---
+
+## 📦 Pasos para Clonar y Usar el Proyecto
+
+### 1. Clonar el repositorio
+git clone https://github.com/AndreaV708/Rese-asLocales.git
+cd Rese-asLocales
+
+### 2. Inicializar Git Flow
+git flow init
+
+# Elegir ramas por defecto:
+# - master: main
+# - develop: develop
+
+### 3. Crear una nueva rama de funcionalidad (feature)
+git flow feature start nombre-de-la-funcionalidad
+Realizar los cambios, luego:
+git add .
+git commit -m "Descripción del cambio"
+git flow feature finish nombre-de-la-funcionalidad
+git push origin develop
+
+🧾 Etapas Finales del Proyecto (Release)
+Una vez que todas las funcionalidades fueron integradas a la rama develop, se siguir estos pasos:
+
+### 1. Crear una rama de versión (release)
+git flow release start v1.0.0
+
+### 2. subir las ramas actulizadas.
+git push origin main
+git push origin develop
+
+### 3. Realizar ajustes finales y terminar la versión
+
+git add .
+git commit -m "Preparación para versión 1.0.0"
+git flow release finish 'v1.0.0'
+Esto generó automáticamente:
+El merge de la rama release/v1.0.0 hacia main y develop.
+
+El tag v1.0.0.
+
+### 4. Subir los cambios y el tag
+
+git push origin main
+git push origin develop
+git push origin --tags
+Con eso, la versión v1.0.0 quedó oficialmente publicada en GitHub en la rama main.
+
+
+
