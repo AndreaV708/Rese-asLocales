@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Galería de Fotos - Rese-asLocales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="collage locales recomendados">
+    <meta name="description" content="Galería de imágenes de los locales recomendados por estudiantes">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Fuentes y estilos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:600">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+
+  <!-- Navbar Start -->
+   <!-- Barra Superior Inicio -->
+   <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a href="contact.html" class="text-dark px-2">
+                         💬 ¿Tienes una recomendación? <strong>¡Escríbenos!</strong>
+                    </a>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</div>
+<!-- Barra Superior Fin -->
+
+
+<!-- Barra de Navegación Inicio -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+         <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+             <a href="index.html" class="navbar-brand"> <h1 class="m-0 text-primary"><span class="text-dark">UTA</span>visor</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Bienvenidos</a>
+                    <a href="about.html" class="nav-item nav-link">Acerca de</a>
+                    <a href="service.html" class="nav-item nav-link">Cosas que hacer</a>
+                    <a href="package.html" class="nav-item nav-link">Lugares</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a>
+                        <div class="dropdown-menu border-0 rounded-0 m-0">
+
+                            <a href="faq.html" class="dropdown-item">Preguntas frecuentes</a>
+                            <a href="galerry.html" class="dropdown-item">Collage de fotos</a>
+                            <a href="privacy.html" class="dropdown-item">Términos y Condiciones</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Navbar End -->
+
+ <!-- Hero Start -->
+ <div class="container-fluid page-header py-5 mb-5">
+    <div class="container text-center py-5">
+        <h1 class="display-4 text-white mb-3">Collage de Fotos</h1>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Galería en Carrusel -->
+<div class="container py-5">
+    <div class="owl-carousel owl-theme">
+        <div class="gallery-item"><img src="img/Only Friends Principal.jpg" alt="Only Friends"></div>
+        <div class="gallery-item"><img src="img/Marisqueria_Sambito principal.jpg" alt="Sambito"></div>
+        <div class="gallery-item"><img src="img/Cafeteria Sierra Bella principal.jpg" alt="Sierra Bella"></div>
+        <div class="gallery-item"><img src="img/HamburguesaQuesp.png" alt="Hamburguesa"></div>
+        <div class="gallery-item"><img src="img/la monita Verde P.jpg" alt="La Monita Verde"></div>
+        <div class="gallery-item"><img src="img/Las paponas de Juancho.jpg" alt="Las Paponas"></div>
+    </div>
+</div>
+
+
+</div>
+<div id="footer-placeholder">
+</div>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/main.js"></script> <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // --- Cargar Footer ---
+        fetch('footer.html') // Asegúrate que la ruta 'footer.html' sea correcta
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(html => {
+                const footerPlaceholder = document.getElementById('footer-placeholder');
+                if(footerPlaceholder){
+                     footerPlaceholder.innerHTML = html;
+                     // Re-inicializar JS si es necesario para el footer/back-to-top
+                     // if (typeof initBackToTop === 'function') { initBackToTop(); }
+                     // El carrusel se inicializa en main.js, pero verificamos si existe
+                     if (typeof $.fn.owlCarousel === 'undefined') {
+                         console.warn("Owl Carousel library not loaded. Testimonials might not work.");
+                     } else {
+                          // Si main.js no lo hace, puedes inicializar aquí:
+                          // $('.testimonial-carousel').owlCarousel({...options...});
+                     }
+                } else {
+                    console.error("Footer placeholder not found!");
+                }
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                 const footerPlaceholder = document.getElementById('footer-placeholder');
+                 if(footerPlaceholder) {
+                     footerPlaceholder.innerHTML = '<p class="text-center text-danger">Error al cargar el pie de página.</p>';
+                 }
+            });
+        }); // Fin DOMContentLoaded
+    </script>
+</body>
+</html>
